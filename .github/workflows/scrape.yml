@@ -1,0 +1,53 @@
+name: Daily Government Announcements Scraper
+
+on:
+  schedule:
+    # 매일 오전 8시
+    - cron: '0 23 * * *'
+  
+  workflow_dispatch:
+  
+  push:
+    branches: [ main ]
+
+jobs:
+  scrape:
+    runs-on: ubuntu-latest
+    
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v4
+      
+    - name: Setup Node.js
+      uses: actions/setup-node@v4
+      with:
+        node-version: '18'
+        
+    - name: Install dependencies
+      run: |
+        npm init -y
+        npm install playwright
+        
+    - name: Install Playwright browsers
+      run: npx playwright install chromium
+      
+    - name: Run scraper
+      run: node scraper.js
+      
+    - name: Commit and push results
+      run: |
+        git config --local user.email "action@github.com"
+        git config --local user.name "GitHub Action"
+        git add announcements.json README.md
+        git diff --staged --quiet || git commit -m "Update announcements - $(date '+%Y-%m-%d %H:%M:%S')"
+        git push
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        
+    - name: Upload results as artifact
+      uses: actions/upload-artifact@v4
+      with:
+        name: announcements-${{ github.run_number }}
+        path: |
+          announcements.json
+          README.md
