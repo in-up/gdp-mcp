@@ -1,6 +1,6 @@
-// scraper.js - GitHub Actions에서 실행될 크롤러
-import { chromium } from 'playwright';
-import fs from 'fs';
+// scraper.js - CommonJS 버전 (import 문제 해결)
+const { chromium } = require('playwright');
+const fs = require('fs');
 
 class GovernmentAnnouncementScraper {
   constructor() {
@@ -63,52 +63,33 @@ class GovernmentAnnouncementScraper {
       });
 
       // 페이지 로딩 대기
-      await page.waitForTimeout(3000);
+      await page.waitForTimeout(5000);
       
-      // 여러 페이지 확인
-      for (let pageNum = 1; pageNum <= 3; pageNum++) {
-        console.log(`K-Startup page ${pageNum}`);
-        
-        const announcements = await page.$$eval('.board_list tbody tr, table tbody tr', (rows) => {
-          return rows.map(row => {
-            const cells = row.querySelectorAll('td');
-            if (cells.length < 4) return null;
+      const announcements = await page.$$eval('.board_list tbody tr, table tbody tr', (rows) => {
+        return rows.map(row => {
+          const cells = row.querySelectorAll('td');
+          if (cells.length < 4) return null;
 
-            const titleElement = cells[1]?.querySelector('a') || cells[2]?.querySelector('a');
-            const title = titleElement?.textContent?.trim() || '';
-            const onclick = titleElement?.getAttribute('onclick') || '';
-            const idMatch = onclick.match(/go_view\((\d+)\)/);
-            const link = idMatch ? 
-              `https://www.k-startup.go.kr/web/contents/bizpbanc-detail.do?seq=${idMatch[1]}` : '';
-            
-            const dateCell = cells[cells.length - 1] || cells[4];
-            const date = dateCell?.textContent?.trim() || '';
+          const titleElement = cells[1]?.querySelector('a') || cells[2]?.querySelector('a');
+          const title = titleElement?.textContent?.trim() || '';
+          const onclick = titleElement?.getAttribute('onclick') || '';
+          const idMatch = onclick.match(/go_view\((\d+)\)/);
+          const link = idMatch ? 
+            `https://www.k-startup.go.kr/web/contents/bizpbanc-detail.do?seq=${idMatch[1]}` : '';
+          
+          const dateCell = cells[cells.length - 1] || cells[4];
+          const date = dateCell?.textContent?.trim() || '';
 
-            return { title, link, date, site: 'K-Startup' };
-          }).filter(Boolean);
-        });
+          return { title, link, date, site: 'K-Startup' };
+        }).filter(Boolean);
+      });
 
-        const recentAnnouncements = announcements.filter(item => 
-          this.isRecentDate(item.date)
-        );
+      const recentAnnouncements = announcements.filter(item => 
+        this.isRecentDate(item.date)
+      );
 
-        this.results.push(...recentAnnouncements);
-
-        // 최근 공고가 없으면 다음 페이지 건너뛰기
-        if (recentAnnouncements.length === 0 && pageNum > 1) {
-          console.log('No recent announcements, stopping pagination');
-          break;
-        }
-
-        // 다음 페이지로 이동 (가능한 경우)
-        const nextButton = await page.$('.pagination .next, .paging .next');
-        if (nextButton && pageNum < 3) {
-          await nextButton.click();
-          await page.waitForTimeout(2000);
-        } else {
-          break;
-        }
-      }
+      this.results.push(...recentAnnouncements);
+      console.log(`K-Startup: ${recentAnnouncements.length} recent announcements found`);
 
     } catch (error) {
       console.error('K-Startup scraping error:', error);
@@ -168,60 +149,48 @@ class GovernmentAnnouncementScraper {
   // 3. 경남테크노파크
   async scrapeGNTP() {
     console.log('Scraping GNTP...');
+    const page = await this.browser.newPage();
     
-    for (let page = 1; page <= 2; page++) {
-      const pageObj = await this.browser.newPage();
-      
-      try {
-        const url = page === 1 ? 
-          'https://www.gntp.or.kr/board/list' : 
-          `https://www.gntp.or.kr/board/list?page=${page}`;
+    try {
+      await page.goto('https://www.gntp.or.kr/board/list', { 
+        waitUntil: 'networkidle', 
+        timeout: 30000 
+      });
+
+      const announcements = await page.$$eval('table tbody tr, .board_list tr', (rows) => {
+        return rows.map(row => {
+          const cells = row.querySelectorAll('td');
+          if (cells.length < 3) return null;
+
+          const titleElement = cells[1]?.querySelector('a') || cells[2]?.querySelector('a');
+          const title = titleElement?.textContent?.trim() || '';
+          const href = titleElement?.getAttribute('href') || '';
+          const link = href.startsWith('http') ? href : 
+            `https://www.gntp.or.kr${href}`;
           
-        await pageObj.goto(url, { waitUntil: 'networkidle', timeout: 30000 });
+          const date = cells[cells.length - 1]?.textContent?.trim() || '';
 
-        const announcements = await pageObj.$$eval('table tbody tr, .board_list tr', (rows) => {
-          return rows.map(row => {
-            const cells = row.querySelectorAll('td');
-            if (cells.length < 3) return null;
+          return { title, link, date, site: 'GNTP' };
+        }).filter(Boolean);
+      });
 
-            const titleElement = cells[1]?.querySelector('a') || cells[2]?.querySelector('a');
-            const title = titleElement?.textContent?.trim() || '';
-            const href = titleElement?.getAttribute('href') || '';
-            const link = href.startsWith('http') ? href : 
-              `https://www.gntp.or.kr${href}`;
-            
-            const date = cells[cells.length - 1]?.textContent?.trim() || '';
+      const recentAnnouncements = announcements.filter(item => 
+        this.isRecentDate(item.date)
+      );
 
-            return { title, link, date, site: 'GNTP' };
-          }).filter(Boolean);
-        });
+      this.results.push(...recentAnnouncements);
+      console.log(`GNTP: ${recentAnnouncements.length} recent announcements found`);
 
-        const recentAnnouncements = announcements.filter(item => 
-          this.isRecentDate(item.date)
-        );
-
-        this.results.push(...recentAnnouncements);
-
-        if (recentAnnouncements.length === 0 && page > 1) {
-          console.log('GNTP: No recent announcements, stopping');
-          break;
-        }
-
-      } catch (error) {
-        console.error(`GNTP page ${page} error:`, error);
-      } finally {
-        await pageObj.close();
-      }
+    } catch (error) {
+      console.error('GNTP scraping error:', error);
+    } finally {
+      await page.close();
     }
   }
 
   // 4-11. 기타 사이트들
   async scrapeOtherSites() {
     const sites = [
-      {
-        name: 'RIPC',
-        url: 'https://pms.ripc.org/pms/biz/applicant/board/viewBoardList.do?boardCategoryCode=BD40000'
-      },
       {
         name: 'GNCKL_Notice',
         url: 'https://www.gnckl.or.kr/bbs/board.php?bo_table=notice'
@@ -288,6 +257,7 @@ class GovernmentAnnouncementScraper {
         );
 
         this.results.push(...recentAnnouncements);
+        console.log(`${site.name}: ${recentAnnouncements.length} recent announcements found`);
 
       } catch (error) {
         console.error(`${site.name} scraping error:`, error);
@@ -307,23 +277,24 @@ class GovernmentAnnouncementScraper {
       return true;
     });
 
-    return unique.sort((a, b) => 
-      new Date(b.date.replace(/[^\d-]/g, '')) - new Date(a.date.replace(/[^\d-]/g, ''))
-    );
+    return unique.sort((a, b) => {
+      const dateA = new Date(a.date.replace(/[^\d-]/g, ''));
+      const dateB = new Date(b.date.replace(/[^\d-]/g, ''));
+      return dateB - dateA;
+    });
   }
 
   // 메인 실행 함수
   async run() {
     try {
+      console.log('Starting government announcements scraper...');
       await this.init();
       
-      // 모든 사이트 병렬 크롤링
-      await Promise.allSettled([
-        this.scrapeBizinfo(),
-        this.scrapeGNTP(),
-        this.scrapeOtherSites(),
-        this.scrapeKStartup() // 가장 무거운 것은 마지막에
-      ]);
+      // 순차적으로 실행 (안정성을 위해)
+      await this.scrapeBizinfo();
+      await this.scrapeGNTP();
+      await this.scrapeOtherSites();
+      await this.scrapeKStartup(); // 가장 무거운 것은 마지막에
 
       // 결과 정리
       const finalResults = this.deduplicateResults();

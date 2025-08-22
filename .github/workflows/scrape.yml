@@ -2,11 +2,12 @@ name: Daily Government Announcements Scraper
 
 on:
   schedule:
-    # 매일 오전 8시
     - cron: '0 23 * * *'
   
+  # 수동 실행 가능
   workflow_dispatch:
   
+  # 코드 변경시에도 실행 (테스트용)
   push:
     branches: [ main ]
 
@@ -25,7 +26,6 @@ jobs:
         
     - name: Install dependencies
       run: |
-        npm init -y
         npm install playwright
         
     - name: Install Playwright browsers
@@ -39,8 +39,12 @@ jobs:
         git config --local user.email "action@github.com"
         git config --local user.name "GitHub Action"
         git add announcements.json README.md
-        git diff --staged --quiet || git commit -m "Update announcements - $(date '+%Y-%m-%d %H:%M:%S')"
-        git push
+        if ! git diff --staged --quiet; then
+          git commit -m "Update announcements - $(date '+%Y-%m-%d %H:%M:%S')"
+          git push
+        else
+          echo "No changes to commit"
+        fi
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         
