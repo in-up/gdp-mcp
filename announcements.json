@@ -1,0 +1,28 @@
+{
+  "lastUpdated": "2025-08-22T09:02:47.600Z",
+  "targetDates": [
+    "2025-08-22",
+    "2025-08-21"
+  ],
+  "totalCount": 3,
+  "announcements": [
+    {
+      "title": "본원(과학동) 구내식당 8월 5주차 식단 안내",
+      "link": "https://www.gntp.or.kr",
+      "date": "2025-08-22",
+      "site": "GNTP"
+    },
+    {
+      "title": "「함께 성장하는 K-방산을 위한 '25-2차 혁신기술 · 장비 소개회」 개최 안내",
+      "link": "https://www.gntp.or.kr",
+      "date": "2025-08-21",
+      "site": "GNTP"
+    },
+    {
+      "title": "2025 이노카페 온라인세미나 및 컨설팅 안내 (하반기 일정)",
+      "link": "https://www.gntp.or.kr",
+      "date": "2025-08-21",
+      "site": "GNTP"
+    }
+  ]
+}
