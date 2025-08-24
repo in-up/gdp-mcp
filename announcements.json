@@ -1,16 +1,9 @@
 {
-  "lastUpdated": "2025-08-23T23:12:16.102Z",
+  "lastUpdated": "2025-08-24T23:12:28.750Z",
   "targetDates": [
-    "2025-08-23",
-    "2025-08-22"
+    "2025-08-24",
+    "2025-08-23"
   ],
-  "totalCount": 1,
-  "announcements": [
-    {
-      "title": "본원(과학동) 구내식당 8월 5주차 식단 안내",
-      "link": "https://www.gntp.or.kr",
-      "date": "2025-08-22",
-      "site": "GNTP"
-    }
-  ]
+  "totalCount": 0,
+  "announcements": []
 }
