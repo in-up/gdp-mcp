@@ -1,9 +1,34 @@
 {
-  "lastUpdated": "2025-08-24T23:12:28.750Z",
+  "lastUpdated": "2025-08-25T23:12:44.911Z",
   "targetDates": [
-    "2025-08-24",
-    "2025-08-23"
+    "2025-08-25",
+    "2025-08-24"
   ],
-  "totalCount": 0,
-  "announcements": []
+  "totalCount": 4,
+  "announcements": [
+    {
+      "title": "경남도-경남TP, ‘AI 노바투스 아카데미아 CEO/CTO 과정’ 개최",
+      "link": "https://www.cnbnews.com/news/article.html?no=745637",
+      "date": "2025-08-25",
+      "site": "GNTP"
+    },
+    {
+      "title": "경남 항공기업, 중국서 1억 1800만 달러 상담 성과",
+      "link": "https://www.idomin.com/news/articleView.html?idxno=944322",
+      "date": "2025-08-25",
+      "site": "GNTP"
+    },
+    {
+      "title": "경남도·경남TP, ‘AI 노바투스 아카데미아 CEO/CTO 과정’ 3회차 개최",
+      "link": "https://www.gntp.or.kr",
+      "date": "2025-08-25",
+      "site": "GNTP"
+    },
+    {
+      "title": "경남 항공기업, 2025 한·중 항공 상담회에서 52건 118백만 달러 수주 상담 성과",
+      "link": "https://www.gntp.or.kr",
+      "date": "2025-08-25",
+      "site": "GNTP"
+    }
+  ]
 }
