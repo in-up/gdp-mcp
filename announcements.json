@@ -1,11 +1,17 @@
 {
-  "lastUpdated": "2025-08-25T23:12:44.911Z",
+  "lastUpdated": "2025-08-26T23:12:12.021Z",
   "targetDates": [
-    "2025-08-25",
-    "2025-08-24"
+    "2025-08-26",
+    "2025-08-25"
   ],
-  "totalCount": 4,
+  "totalCount": 5,
   "announcements": [
+    {
+      "title": "부패방지경영시스템 공지",
+      "link": "https://www.gntp.or.kr",
+      "date": "2025-08-26",
+      "site": "GNTP"
+    },
     {
       "title": "경남도-경남TP, ‘AI 노바투스 아카데미아 CEO/CTO 과정’ 개최",
       "link": "https://www.cnbnews.com/news/article.html?no=745637",
