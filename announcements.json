@@ -1,39 +1,21 @@
 {
-  "lastUpdated": "2025-08-26T23:12:12.021Z",
+  "lastUpdated": "2025-08-27T23:12:15.896Z",
   "targetDates": [
-    "2025-08-26",
-    "2025-08-25"
+    "2025-08-27",
+    "2025-08-26"
   ],
-  "totalCount": 5,
+  "totalCount": 2,
   "announcements": [
+    {
+      "title": "[인천관광공사] 2025 제 4회 그린에너텍 전시회 개최",
+      "link": "https://www.gntp.or.kr",
+      "date": "2025-08-27",
+      "site": "GNTP"
+    },
     {
       "title": "부패방지경영시스템 공지",
       "link": "https://www.gntp.or.kr",
       "date": "2025-08-26",
-      "site": "GNTP"
-    },
-    {
-      "title": "경남도-경남TP, ‘AI 노바투스 아카데미아 CEO/CTO 과정’ 개최",
-      "link": "https://www.cnbnews.com/news/article.html?no=745637",
-      "date": "2025-08-25",
-      "site": "GNTP"
-    },
-    {
-      "title": "경남 항공기업, 중국서 1억 1800만 달러 상담 성과",
-      "link": "https://www.idomin.com/news/articleView.html?idxno=944322",
-      "date": "2025-08-25",
-      "site": "GNTP"
-    },
-    {
-      "title": "경남도·경남TP, ‘AI 노바투스 아카데미아 CEO/CTO 과정’ 3회차 개최",
-      "link": "https://www.gntp.or.kr",
-      "date": "2025-08-25",
-      "site": "GNTP"
-    },
-    {
-      "title": "경남 항공기업, 2025 한·중 항공 상담회에서 52건 118백만 달러 수주 상담 성과",
-      "link": "https://www.gntp.or.kr",
-      "date": "2025-08-25",
       "site": "GNTP"
     }
   ]
