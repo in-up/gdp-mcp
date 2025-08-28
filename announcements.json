@@ -1,21 +1,15 @@
 {
-  "lastUpdated": "2025-08-27T23:12:15.896Z",
+  "lastUpdated": "2025-08-28T23:12:52.208Z",
   "targetDates": [
-    "2025-08-27",
-    "2025-08-26"
+    "2025-08-28",
+    "2025-08-27"
   ],
-  "totalCount": 2,
+  "totalCount": 1,
   "announcements": [
     {
       "title": "[인천관광공사] 2025 제 4회 그린에너텍 전시회 개최",
       "link": "https://www.gntp.or.kr",
       "date": "2025-08-27",
-      "site": "GNTP"
-    },
-    {
-      "title": "부패방지경영시스템 공지",
-      "link": "https://www.gntp.or.kr",
-      "date": "2025-08-26",
       "site": "GNTP"
     }
   ]
