@@ -1,11 +1,17 @@
 {
-  "lastUpdated": "2025-08-29T23:12:17.440Z",
+  "lastUpdated": "2025-08-30T23:11:58.821Z",
   "targetDates": [
-    "2025-08-29",
-    "2025-08-28"
+    "2025-08-30",
+    "2025-08-29"
   ],
-  "totalCount": 1,
+  "totalCount": 2,
   "announcements": [
+    {
+      "title": "2025년 9월 경남테크노파크 입주기업 모집 공고",
+      "link": "https://www.gntp.or.kr",
+      "date": "2025-08-30",
+      "site": "GNTP"
+    },
     {
       "title": "본원(과학동) 구내식당 9월 1주차 식단 안내",
       "link": "https://www.gntp.or.kr",
