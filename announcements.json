@@ -1,15 +1,33 @@
 {
-  "lastUpdated": "2025-08-31T23:12:04.284Z",
+  "lastUpdated": "2025-09-01T23:12:06.105Z",
   "targetDates": [
-    "2025-08-31",
-    "2025-08-30"
+    "2025-09-01",
+    "2025-08-31"
   ],
-  "totalCount": 1,
+  "totalCount": 4,
   "announcements": [
     {
-      "title": "2025년 9월 경남테크노파크 입주기업 모집 공고",
+      "title": "경남테크노파크, 제12회 대한민국 SW융합 해커톤 대회서 2팀 우수상 수상",
       "link": "https://www.gntp.or.kr",
-      "date": "2025-08-30",
+      "date": "2025-09-01",
+      "site": "GNTP"
+    },
+    {
+      "title": "경남테크노파크, 도내 지방소멸 지역 기업지원과 소상공인 소비 촉진을 위해 앞장서다!",
+      "link": "https://www.gntp.or.kr",
+      "date": "2025-09-01",
+      "site": "GNTP"
+    },
+    {
+      "title": "(9월 1주차) 2025년 이노카페 기업애로 온라인 세미나 및 컨설팅 안내",
+      "link": "https://www.gntp.or.kr",
+      "date": "2025-09-01",
+      "site": "GNTP"
+    },
+    {
+      "title": "경남테크노파크, ICT이노베이션스퀘어 확산 사업 기업협력 프로젝트 교육과정 수료식 개최",
+      "link": "https://www.gntp.or.kr",
+      "date": "2025-09-01",
       "site": "GNTP"
     }
   ]
