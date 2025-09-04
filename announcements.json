@@ -1,10 +1,10 @@
 {
-  "lastUpdated": "2025-09-03T23:11:55.110Z",
+  "lastUpdated": "2025-09-04T23:12:22.580Z",
   "targetDates": [
-    "2025-09-03",
-    "2025-09-02"
+    "2025-09-04",
+    "2025-09-03"
   ],
-  "totalCount": 7,
+  "totalCount": 3,
   "announcements": [
     {
       "title": "함께 성장하는 K-방산 '25-2차 혁신기술·장비 소개회 개최",
@@ -22,30 +22,6 @@
       "title": "2025년 (재)경남테크노파크 인력(기간제) 채용 재공고 서류전형 합격자 공고(2025-295호 관련)",
       "link": "https://www.gntp.or.kr",
       "date": "2025-09-03",
-      "site": "GNTP"
-    },
-    {
-      "title": "경남테크노파크 SW융합 해커톤서 2팀 우수상 수상",
-      "link": "https://news.mt.co.kr/mtview.php?no=2025090114433416609",
-      "date": "2025-09-02",
-      "site": "GNTP"
-    },
-    {
-      "title": "경남TP, 도내 지방소멸 지역 기업지원과 소상공인 소비 촉진 앞장",
-      "link": "https://www.cnbnews.com/news/article.html?no=747105",
-      "date": "2025-09-02",
-      "site": "GNTP"
-    },
-    {
-      "title": "경남TP, AI 실무 인재 27명 배출… 지역 제조업 경쟁력 강화",
-      "link": "https://www.betanews.net/article/view/beta202508290061",
-      "date": "2025-09-02",
-      "site": "GNTP"
-    },
-    {
-      "title": "「국가인적자원개발컨소시엄사업」 2026년 교육과정 개발을 위한 수요조사 공고",
-      "link": "https://www.gntp.or.kr",
-      "date": "2025-09-02",
       "site": "GNTP"
     }
   ]
