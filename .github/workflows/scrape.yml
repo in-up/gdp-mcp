@@ -32,7 +32,7 @@ jobs:
       run: npx playwright install chromium
       
     - name: Run scraper
-      run: node scraper.js
+      run: node index.js
       
     - name: Commit and push results
       run: |
