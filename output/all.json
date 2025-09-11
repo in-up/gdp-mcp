@@ -1,10 +1,16 @@
 {
-  "lastUpdated": "2025-09-11T09:20:27.254Z",
-  "targetDates": [
-    "2025-09-11",
-    "2025-09-10"
-  ],
-  "totalCount": 91,
+  "header": {
+    "lastUpdated": "2025-09-11T09:33:09.066Z",
+    "scraperStatuses": {
+      "Bizinfo": "success",
+      "GNTP": "success",
+      "GNCKL": "success",
+      "GNCEP": "success",
+      "KStartup": "success",
+      "RIPC": "success",
+      "CCEI": "success"
+    }
+  },
   "announcements": [
     {
       "title": "[강원] 삼척시 2025년 청년 스타트업 창업 지원사업 참여자 모집 공고 (2025-09-08 ~ 2025-09-19)",
@@ -399,6 +405,54 @@
       "site": "Bizinfo"
     },
     {
+      "title": "이 달의 중소기업 지원정보지 (25. 9월호)",
+      "link": "https://www.gntp.or.kr/board/detail/new/20020",
+      "date": "2025-09-11",
+      "site": "GNTP"
+    },
+    {
+      "title": "[창원산업진흥원]탄소규제 대응 실무교육 참여자 모집 공고",
+      "link": "https://www.gntp.or.kr/board/detail/new/20019",
+      "date": "2025-09-11",
+      "site": "GNTP"
+    },
+    {
+      "title": "(9월 2주차) 2025년 이노카페 기업애로 온라인 세미나 및 컨설팅 안내",
+      "link": "https://www.gntp.or.kr/board/detail/new/20017",
+      "date": "2025-09-11",
+      "site": "GNTP"
+    },
+    {
+      "title": "[창원대학교] 연구인력 현장맞춤형 양성지원사업",
+      "link": "https://www.gntp.or.kr/board/detail/new/20016",
+      "date": "2025-09-11",
+      "site": "GNTP"
+    },
+    {
+      "title": "2025 창업보육전문매니저 자격시험대비 교육과정 개설",
+      "link": "https://www.gntp.or.kr/board/detail/new/20015",
+      "date": "2025-09-11",
+      "site": "GNTP"
+    },
+    {
+      "title": "2025년 (재)경남테크노파크 인력(기간제) 채용 재공고 면접전형 합격자(임용후보자) 공고(2025-295호 관련)",
+      "link": "https://www.gntp.or.kr/board/detail/new/20014",
+      "date": "2025-09-11",
+      "site": "GNTP"
+    },
+    {
+      "title": "[경상남도] 2025년 「경남형 청년친화기업」 지원사업 참여기업 추가 모집 공고",
+      "link": "https://www.gntp.or.kr/board/detail/new/20013",
+      "date": "2025-09-11",
+      "site": "GNTP"
+    },
+    {
+      "title": "2025년 프리팁스(Pre-TIPS) 3차 창업기업 모집공고",
+      "site": "K-Startup",
+      "date": "2025-09-11",
+      "link": "https://www.k-startup.go.kr/web/contents/bizpbanc-ongoing.do?pbancClssCd=PBC010&schM=view&pbancSn=174940"
+    },
+    {
       "title": "2025년 2차 해외전시회(GITEXㆍVINAMAC EXPO) 한국로봇관 참여 로봇기업 모집 공고",
       "link": "https://www.bizinfo.go.krview.do?pblancId=PBLN_000000000114722",
       "applicationPeriod": "세부사업별 상이",
@@ -532,58 +586,10 @@
       "site": "Bizinfo"
     },
     {
-      "title": "이 달의 중소기업 지원정보지 (25. 9월호)",
-      "link": "https://www.gntp.or.kr/board/detail/new/20020",
-      "date": "2025-09-11",
-      "site": "GNTP"
-    },
-    {
-      "title": "[창원산업진흥원]탄소규제 대응 실무교육 참여자 모집 공고",
-      "link": "https://www.gntp.or.kr/board/detail/new/20019",
-      "date": "2025-09-11",
-      "site": "GNTP"
-    },
-    {
-      "title": "(9월 2주차) 2025년 이노카페 기업애로 온라인 세미나 및 컨설팅 안내",
-      "link": "https://www.gntp.or.kr/board/detail/new/20017",
-      "date": "2025-09-11",
-      "site": "GNTP"
-    },
-    {
-      "title": "[창원대학교] 연구인력 현장맞춤형 양성지원사업",
-      "link": "https://www.gntp.or.kr/board/detail/new/20016",
-      "date": "2025-09-11",
-      "site": "GNTP"
-    },
-    {
-      "title": "2025 창업보육전문매니저 자격시험대비 교육과정 개설",
-      "link": "https://www.gntp.or.kr/board/detail/new/20015",
-      "date": "2025-09-11",
-      "site": "GNTP"
-    },
-    {
-      "title": "2025년 (재)경남테크노파크 인력(기간제) 채용 재공고 면접전형 합격자(임용후보자) 공고(2025-295호 관련)",
-      "link": "https://www.gntp.or.kr/board/detail/new/20014",
-      "date": "2025-09-11",
-      "site": "GNTP"
-    },
-    {
-      "title": "[경상남도] 2025년 「경남형 청년친화기업」 지원사업 참여기업 추가 모집 공고",
-      "link": "https://www.gntp.or.kr/board/detail/new/20013",
-      "date": "2025-09-11",
-      "site": "GNTP"
-    },
-    {
       "title": "[경남창조경제혁신센터] 2025년 경상남도 창업보육센터 입주기업 추가 모집공고",
       "link": "https://www.gntp.or.kr/board/detail/new/20012",
       "date": "2025-09-10",
       "site": "GNTP"
-    },
-    {
-      "title": "2025년 프리팁스(Pre-TIPS) 3차 창업기업 모집공고",
-      "site": "K-Startup",
-      "date": "2025-09-11",
-      "link": "https://www.k-startup.go.kr/web/contents/bizpbanc-ongoing.do?pbancClssCd=PBC010&schM=view&pbancSn=174940"
     },
     {
       "title": "[내비온] 2025년 판교 스타트업 제3차 투자교류회 개최 안내",

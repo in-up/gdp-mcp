@@ -1,16 +1,9 @@
-
-// src/scrapers/otherSites.js
-
 const sites = [
-    { name: 'GNCKL_Notice', url: 'https://www.gnckl.or.kr/bbs/board.php?bo_table=notice' },
-    { name: 'GNCKL_Notice2', url: 'https://www.gnckl.or.kr/bbs/board.php?bo_table=notice2' },
-    { name: 'GNCKL_Notice3', url: 'https://www.gnckl.or.kr/bbs/board.php?bo_table=notice3' },
     { name: 'GNCEP_Notice', url: 'https://www.gncep.or.kr/bbs/board.php?bo_table=sub4_notice' },
     { name: 'GNCEP_Business', url: 'https://www.gncep.or.kr/bbs/board.php?bo_table=sub4_business' },
-    { name: 'GNCEP_Recruit', url: 'https://www.gncep.or.kr/bbs/board.php?bo_table=sub2_3' }
 ];
 
-async function scrapeOtherSites(browser, isRecentDate, targetDates) {
+async function scrapeGNCEP(browser, isRecentDate, targetDates) {
   let allResults = [];
 
   for (const site of sites) {
@@ -19,13 +12,15 @@ async function scrapeOtherSites(browser, isRecentDate, targetDates) {
     try {
       await page.goto(site.url, { waitUntil: 'networkidle', timeout: 30000 });
 
-      const announcements = await page.$eval('table tbody tr, .board_list tr', (rows, { siteName, siteUrl }) => {
-        if (!Array.isArray(rows)) return []; // Ensure rows is an array
+      const announcements = await page.$$eval('#bo_list .tbl_head01 tbody tr', (rows, { siteName, siteUrl }) => {
         return rows.map(row => {
           const cells = row.querySelectorAll('td');
           if (cells.length < 3) return null;
 
-          let titleElement = cells[1]?.querySelector('a') || cells[2]?.querySelector('a') || cells[0]?.querySelector('a');
+          const dateElement = row.querySelector('.td_datetime');
+          const date = dateElement?.textContent?.trim() || '';
+
+          const titleElement = row.querySelector('.td_subject .bo_tit a');
           const title = titleElement?.textContent?.trim() || '';
           const href = titleElement?.getAttribute('href') || '';
           
@@ -39,12 +34,11 @@ async function scrapeOtherSites(browser, isRecentDate, targetDates) {
                 link = '#';
             }
           }
-          
-          const date = cells[cells.length - 1]?.textContent?.trim() || cells[cells.length - 2]?.textContent?.trim() || '';
 
           return { title, link, date, site: siteName };
-        }).filter(item => item.title && item.title.length > 0);
+        }).filter(item => item && item.title && item.title.length > 0);
       }, { siteName: site.name, siteUrl: site.url });
+      
 
       const recentAnnouncements = announcements.filter(item => isRecentDate(item.date, targetDates));
       allResults.push(...recentAnnouncements);
@@ -59,4 +53,4 @@ async function scrapeOtherSites(browser, isRecentDate, targetDates) {
   return allResults;
 }
 
-module.exports = { scrapeOtherSites };
+module.exports = { scrapeGNCEP };
