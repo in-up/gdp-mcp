@@ -1,3 +1,14 @@
+// Polyfill for File object if not defined (for undici compatibility in some Node.js environments)
+if (typeof File === 'undefined') {
+  global.File = class File extends Blob {
+    constructor(fileBits, fileName, options) {
+      super(fileBits, options);
+      this.name = fileName;
+      this.lastModified = options?.lastModified || Date.now();
+    }
+  };
+}
+
 // scraper.js (Main)
 const { chromium } = require('playwright');
 const fs = require('fs');
