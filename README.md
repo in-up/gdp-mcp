@@ -1,6 +1,6 @@
 # 정부 지원사업 최근 공고
 
-**업데이트:** 2025. 9. 12. 오후 12:01:34
+**업데이트:** 2025. 9. 12. 오후 4:13:49
 
 | 제목 | 사이트 | 날짜 | 링크 |
 |------|--------|------|------|
@@ -58,7 +58,6 @@
 | 2025 안양·의왕·수원 1인창조 및 중장년센터 사업 설명회 및  실전창업교육 | k-startup | 2025-09-12 | [링크](https://www.k-startup.go.kr/web/contents/bizpbanc-ongoing.do?pbancClssCd=PBC010&schM=view&pbancSn=174922) |
 | 2025 대한민국 관광기념품 박람회 참가기업 모집 (~9.17 14:00) | k-startup | 2025-09-12 | [링크](https://www.k-startup.go.kr/web/contents/bizpbanc-ongoing.do?pbancClssCd=PBC010&schM=view&pbancSn=174900) |
 | [한국지식재산보호원] 2025년 영업비밀·기술보호 컨설팅 4차 모집 통합공고 | ripc | 2025-09-12 | [링크](https://pms.ripc.org/pms/biz/applicant/board/viewBoardList.do?boardCategoryCode=BD40000) |
-| 2025년 외국인 기술창업지원 프로그램 참여자 모집 공고(연장) | gnstartup | 2025-09-12 | [링크](https://www.gnstartup.kr/business/8339db24-725a-45bc-baf9-d778adc7b0d8/undefined/detail) |
 | [강원] 삼척시 2025년 청년 스타트업 창업 지원사업 참여자 모집 공고 (2025-09-... | bizinfo | 2025-09-11 | [링크](https://www.bizinfo.go.kr/web/lay1/bbs/S1T122C128/AS/74/view.do?pblancId=PBLN_000000000114769) |
 | [강원] 삼척시 2025년 하반기 영농부산물 안전처리 지원사업 신청 공고 (2025-09-... | bizinfo | 2025-09-11 | [링크](https://www.bizinfo.go.kr/web/lay1/bbs/S1T122C128/AS/74/view.do?pblancId=PBLN_000000000114783) |
 | [충북] 단양군 2025년 중소기업 육성자금 지원계획 공고 (예산 소진시까지) | bizinfo | 2025-09-11 | [링크](https://www.bizinfo.go.kr/web/lay1/bbs/S1T122C128/AS/74/view.do?pblancId=PBLN_000000000114768) |
