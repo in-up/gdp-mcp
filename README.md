@@ -1,9 +1,10 @@
 # 정부 지원사업 최근 공고
 
-**업데이트:** 2025. 9. 11. 오전 7:33:16
+**업데이트:** 2025. 9. 12. 오후 3:04:28
 
 | 제목 | 사이트 | 날짜 | 링크 |
 |------|--------|------|------|
+| [한국지식재산보호원] 2025년 영업비밀·기술보호 컨설팅 4차 모집 통합공고 | RIPC | 2025-09-12 | [링크](https://pms.ripc.org/pms/biz/applicant/board/viewBoardDetail.do?boardSeq=13706) |
 | [강원] 삼척시 2025년 청년 스타트업 창업 지원사업 참여자 모집 공고 (2025-09-... | Bizinfo | 2025-09-11 | [링크](https://www.bizinfo.go.krview.do?pblancId=PBLN_000000000114769) |
 | [강원] 삼척시 2025년 하반기 영농부산물 안전처리 지원사업 신청 공고 (2025-09-... | Bizinfo | 2025-09-11 | [링크](https://www.bizinfo.go.krview.do?pblancId=PBLN_000000000114783) |
 | [충북] 단양군 2025년 중소기업 육성자금 지원계획 공고 (예산 소진시까지) | Bizinfo | 2025-09-11 | [링크](https://www.bizinfo.go.krview.do?pblancId=PBLN_000000000114768) |
@@ -60,38 +61,4 @@
 | [세종] 2025년 여성친화인증 기업 모집 재공고 (2025-09-10 ~ 2025-09-... | Bizinfo | 2025-09-11 | [링크](https://www.bizinfo.go.krview.do?pblancId=PBLN_000000000114725) |
 | [서울] 2025년 2차 국내 및 해외 면세점 진출 지원사업 현대면세점 입점 지원기업 모집... | Bizinfo | 2025-09-11 | [링크](https://www.bizinfo.go.krview.do?pblancId=PBLN_000000000114724) |
 | 2025년 3차 대형유통망 입점연계지원(LG유플러스) 공고 (2025-09-04 ~ 202... | Bizinfo | 2025-09-11 | [링크](https://www.bizinfo.go.krview.do?pblancId=PBLN_000000000114723) |
-| 이 달의 중소기업 지원정보지 (25. 9월호) | GNTP | 2025-09-11 | [링크](https://www.gntp.or.kr/board/detail/new/20020) |
-| [창원산업진흥원]탄소규제 대응 실무교육 참여자 모집 공고 | GNTP | 2025-09-11 | [링크](https://www.gntp.or.kr/board/detail/new/20019) |
-| (9월 2주차) 2025년 이노카페 기업애로 온라인 세미나 및 컨설팅 안내 | GNTP | 2025-09-11 | [링크](https://www.gntp.or.kr/board/detail/new/20017) |
-| [창원대학교] 연구인력 현장맞춤형 양성지원사업 | GNTP | 2025-09-11 | [링크](https://www.gntp.or.kr/board/detail/new/20016) |
-| 2025 창업보육전문매니저 자격시험대비 교육과정 개설 | GNTP | 2025-09-11 | [링크](https://www.gntp.or.kr/board/detail/new/20015) |
-| 2025년 (재)경남테크노파크 인력(기간제) 채용 재공고 면접전형 합격자(임용후보자) 공고... | GNTP | 2025-09-11 | [링크](https://www.gntp.or.kr/board/detail/new/20014) |
-| [경상남도] 2025년 「경남형 청년친화기업」 지원사업 참여기업 추가 모집 공고 | GNTP | 2025-09-11 | [링크](https://www.gntp.or.kr/board/detail/new/20013) |
 | 2025년 프리팁스(Pre-TIPS) 3차 창업기업 모집공고 | K-Startup | 2025-09-11 | [링크](https://www.k-startup.go.kr/web/contents/bizpbanc-ongoing.do?pbancClssCd=PBC010&schM=view&pbancSn=174940) |
-| 2025년 2차 해외전시회(GITEXㆍVINAMAC EXPO) 한국로봇관 참여 로봇기업 모... | Bizinfo | 2025-09-10 | [링크](https://www.bizinfo.go.krview.do?pblancId=PBLN_000000000114722) |
-| [강원] 춘천시 3차 강원후평 스마트그린산단 스마트제조 고급인력 양성사업 문제해결기반 기업... | Bizinfo | 2025-09-10 | [링크](https://www.bizinfo.go.krview.do?pblancId=PBLN_000000000114712) |
-| [전북] 2025년 벤처 투자 유치 및 네트워킹 지원사업 추가모집(피치덱ㆍIR덱 제작 및 ... | Bizinfo | 2025-09-10 | [링크](https://www.bizinfo.go.krview.do?pblancId=PBLN_000000000114711) |
-| 2025년 제4차 혁신제품 지정 신청 공고 (2025-09-09 ~ 2025-09-24) | Bizinfo | 2025-09-10 | [링크](https://www.bizinfo.go.krview.do?pblancId=PBLN_000000000114721) |
-| 2025년 국제공동연구 신속지원사업 신규과제 선정계획 공고 (2025-09-01 ~ 202... | Bizinfo | 2025-09-10 | [링크](https://www.bizinfo.go.krview.do?pblancId=PBLN_000000000114700) |
-| 2025년 데이터 마케팅 컨설팅 지원 참여 출판사 추가 모집 공고(중소출판 도약부문 마케팅... | Bizinfo | 2025-09-10 | [링크](https://www.bizinfo.go.krview.do?pblancId=PBLN_000000000114710) |
-| [부산] 2025년 양자기술 도입ㆍ적용 컨설팅 지원사업 수요기업 모집 공고(수요기반 양자기... | Bizinfo | 2025-09-10 | [링크](https://www.bizinfo.go.krview.do?pblancId=PBLN_000000000114709) |
-| 2025년 패션봉제 산업인포상 공고 (2025-09-04 ~ 2025-10-02) | Bizinfo | 2025-09-10 | [링크](https://www.bizinfo.go.krview.do?pblancId=PBLN_000000000114699) |
-| [광주] 2025년 BM모델 멘토링 및 IR 컨설팅 프로그램 참여자 모집 공고(RISE사업... | Bizinfo | 2025-09-10 | [링크](https://www.bizinfo.go.krview.do?pblancId=PBLN_000000000114708) |
-| 2025년 5차 원자력생태계 지원사업 원전 유관 전공자 인턴 채용ㆍ정규직 전환 지원사업 신... | Bizinfo | 2025-09-10 | [링크](https://www.bizinfo.go.krview.do?pblancId=PBLN_000000000114707) |
-| [전북] 2025년 식품기업 창업프로그램 지원사업 간접투자 지원 프로그램 참여기업 모집 공... | Bizinfo | 2025-09-10 | [링크](https://www.bizinfo.go.krview.do?pblancId=PBLN_000000000114698) |
-| [제주] 3차 도내 관광사업체 디지털 전환 및 경쟁력 강화(관광객 비대면 서비스 디지털 장... | Bizinfo | 2025-09-10 | [링크](https://www.bizinfo.go.krview.do?pblancId=PBLN_000000000114706) |
-| 2025년 3차 원자력생태계 지원사업 퇴직자ㆍ재직자 역량강화 지원사업 신청 공고(경력직 채... | Bizinfo | 2025-09-10 | [링크](https://www.bizinfo.go.krview.do?pblancId=PBLN_000000000114705) |
-| [강원] 2025년 3분기 강원혁신도시 공유오피스 조성 지원사업 공고 (2025-09-10... | Bizinfo | 2025-09-10 | [링크](https://www.bizinfo.go.krview.do?pblancId=PBLN_000000000114704) |
-| [강원] 2025년 3분기 강원혁신도시 공공기관 연관산업 기업유치 등 지원사업 공고 (20... | Bizinfo | 2025-09-10 | [링크](https://www.bizinfo.go.krview.do?pblancId=PBLN_000000000114697) |
-| [제주] 서귀포시 2025년 5차 어선사고 예방시스템 구축사업 대상자 모집 공고 (2025... | Bizinfo | 2025-09-10 | [링크](https://www.bizinfo.go.krview.do?pblancId=PBLN_000000000114696) |
-| 2025년 산업혁신기반구축사업 기업지원 상시 모집 재공고(국가재난 슈퍼박테리아-신종바이러스... | Bizinfo | 2025-09-10 | [링크](https://www.bizinfo.go.krview.do?pblancId=PBLN_000000000114703) |
-| [경남] 창원시 2025년 제3차 신중년 내일이음 50+ 사업 참여기업 모집 공고 (202... | Bizinfo | 2025-09-10 | [링크](https://www.bizinfo.go.krview.do?pblancId=PBLN_000000000114702) |
-| [충북] 2025년 2차 AI PoC 실증 지원 사업 수혜기업 모집 공고(지역특화 제조데이... | Bizinfo | 2025-09-10 | [링크](https://www.bizinfo.go.krview.do?pblancId=PBLN_000000000114701) |
-| [경남창조경제혁신센터] 2025년 경상남도 창업보육센터 입주기업 추가 모집공고 | GNTP | 2025-09-10 | [링크](https://www.gntp.or.kr/board/detail/new/20012) |
-| [내비온] 2025년 판교 스타트업 제3차 투자교류회 개최 안내 | K-Startup | 2025-09-10 | [링크](https://www.k-startup.go.kr/web/contents/bizpbanc-ongoing.do?pbancClssCd=PBC010&schM=view&pbancSn=174957) |
-| 언더스탠드에비뉴 입주기업 모집 | K-Startup | 2025-09-10 | [링크](https://www.k-startup.go.kr/web/contents/bizpbanc-ongoing.do?pbancClssCd=PBC010&schM=view&pbancSn=174863) |
-| 2025-5회 호남권 엔젤투자톡톡 in 전북 참가기업 모집 안내 | K-Startup | 2025-09-10 | [링크](https://www.k-startup.go.kr/web/contents/bizpbanc-ongoing.do?pbancClssCd=PBC010&schM=view&pbancSn=174961) |
-| [충북] 2025년 IP디딤돌 프로그램 후속지원 사업 | RIPC | 2025-09-10 | [링크](https://pms.ripc.org/pms/biz/applicant/board/viewBoardDetail.do?boardSeq=13690) |
-| 2025년도 RISE 혁신패키지 프로그램 공고 | RIPC | 2025-09-10 | [링크](https://pms.ripc.org/pms/biz/applicant/board/viewBoardDetail.do?boardSeq=13688) |
-| 2025년도 RISE IP 패스트트랙 지원 프로그램 공고 | RIPC | 2025-09-10 | [링크](https://pms.ripc.org/pms/biz/applicant/board/viewBoardDetail.do?boardSeq=13687) |
-| [경북북부] 2025년 경상북도 IP창업클럽 모집공고 | RIPC | 2025-09-10 | [링크](https://pms.ripc.org/pms/biz/applicant/board/viewBoardDetail.do?boardSeq=13684) |

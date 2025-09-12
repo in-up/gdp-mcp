@@ -1,4 +1,3 @@
-
 const sites = [
     { name: 'GNCKL_Notice', url: 'https://www.gnckl.or.kr/bbs/board.php?bo_table=notice' },
     { name: 'GNCKL_Notice2', url: 'https://www.gnckl.or.kr/bbs/board.php?bo_table=notice2' },
@@ -32,7 +31,6 @@ async function scrapeGNCKL(browser, isRecentDate, targetDates) {
                 const baseUrl = new URL(siteUrl).origin;
                 link = new URL(href, baseUrl).href;
             } catch (e) {
-                // Handle cases where href is not a valid URL part, e.g., javascript:;
                 link = '#';
             }
           }

@@ -1,5 +1,3 @@
-
-// src/scrapers/ripc.js
 const axios = require('axios');
 const { URLSearchParams } = require('url');
 
@@ -12,10 +10,9 @@ async function scrapeRIPC(browser, isRecentDate, targetDates) {
     const initialUrl = 'https://pms.ripc.org/pms/biz/applicant/board/viewBoardList.do?boardCategoryCode=BD40000';
     await page.goto(initialUrl, { waitUntil: 'domcontentloaded', timeout: 60000 });
     await page.waitForLoadState('load');
-    await page.waitForTimeout(2000); // Give some time for JS to execute
-    await page.waitForLoadState('networkidle'); // Wait for network to be idle after initial JS
+    await page.waitForTimeout(2000); 
+    await page.waitForLoadState('networkidle'); 
 
-    // Extract all hidden input values from frmPageParams
     const formParams = await page.evaluate(() => {
       const params = {};
       const form = document.querySelector('#frmPageParams');
@@ -29,20 +26,16 @@ async function scrapeRIPC(browser, isRecentDate, targetDates) {
     });
     console.log('Extracted form parameters:', formParams);
 
-    // Loop through pages using API calls
-    for (let pageNum = 1; pageNum <= 5; pageNum++) { // Scrape up to 5 pages
+    for (let pageNum = 1; pageNum <= 5; pageNum++) { 
       console.log(` -> Fetching RIPC API page ${pageNum}...`);
       const apiUrl = 'https://pms.ripc.org/pms/biz/applicant/board/getPostList.do';
       
       const params = new URLSearchParams();
-      // Add all extracted form parameters
       for (const key in formParams) {
         params.append(key, formParams[key]);
       }
-      // Override currentPageNo and recordCountPerPage for pagination
       params.set('currentPageNo', pageNum);
-      params.set('recordCountPerPage', '50'); // Get more items per page
-      // boardCategoryCode is already in formParams, but ensure it's correct
+      params.set('recordCountPerPage', '50'); 
       params.set('boardCategoryCode', 'BD40000');
 
       const response = await axios.post(apiUrl, params.toString(), {
@@ -54,7 +47,7 @@ async function scrapeRIPC(browser, isRecentDate, targetDates) {
 
       if (!data || !data.result || !data.result.postList || data.result.postList.length === 0) {
         console.log(`    No data found on API page ${pageNum}, breaking loop.`);
-        break; // No more data, exit loop
+        break; 
       }
 
       const announcementsOnPage = data.result.postList.map(item => {
@@ -74,7 +67,6 @@ async function scrapeRIPC(browser, isRecentDate, targetDates) {
       console.log(`    Found ${currentRecentAnnouncements.length} recent announcements on API page ${pageNum}.`);
       allAnnouncements.push(...currentRecentAnnouncements);
 
-      // If no recent announcements found on this page, and it's not the first page, break
       if (currentRecentAnnouncements.length === 0 && pageNum > 1) {
         console.log('    No recent announcements found on this API page, stopping.');
         break;

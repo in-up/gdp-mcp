@@ -30,14 +30,13 @@ async function scrapeGNCEP(browser, isRecentDate, targetDates) {
                 const baseUrl = new URL(siteUrl).origin;
                 link = new URL(href, baseUrl).href;
             } catch (e) {
-                // Handle cases where href is not a valid URL part, e.g., javascript:;
                 link = '#';
             }
           }
 
           return { title, link, date, site: siteName };
         }).filter(item => item && item.title && item.title.length > 0);
-      }, { siteName: site.name, siteUrl: site.url });
+      });
       
 
       const recentAnnouncements = announcements.filter(item => isRecentDate(item.date, targetDates));

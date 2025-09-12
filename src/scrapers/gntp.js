@@ -1,43 +1,44 @@
-// src/scrapers/gntp.js
+
+const { chromium } = require('playwright');
 
 async function scrapeGNTP(browser, isRecentDate, targetDates) {
   console.log('Scraping GNTP (new board only)...');
+  let allAnnouncements = [];
   const page = await browser.newPage();
-  let results = [];
-  
-  try {
-    // Only scrape the 'new' board, which is the default
-    const url = 'https://www.gntp.or.kr/board/list';
-    await page.goto(url, { waitUntil: 'networkidle', timeout: 30000 });
 
-    const announcements = await page.$$eval('table tbody tr', (rows) => {
-      if (!Array.isArray(rows)) return [];
+  try {
+    const initialUrl = 'https://www.gntp.or.kr/board/list/new';
+    await page.goto(initialUrl, { waitUntil: 'networkidle', timeout: 30000 });
+
+    const announcementsOnPage = await page.$$eval('#board-list-table tbody tr', (rows) => {
       return rows.map(row => {
         const cells = row.querySelectorAll('td');
-        if (cells.length < 4) return null; // Standard rows have 4 cells
+        if (cells.length < 5) return null;
 
-        const titleElement = cells[2]?.querySelector('a');
+        const titleElement = cells[1]?.querySelector('a');
         const title = titleElement?.textContent?.trim() || '';
-        const href = titleElement?.getAttribute('onclick') || '';
-        const idMatch = href.match(/detail\/([^/]+)\/(\d+)/);
-        const link = idMatch ? `https://www.gntp.or.kr/board/detail/${idMatch[1]}/${idMatch[2]}` : '#';
+        const href = titleElement?.getAttribute('href') || '';
+        const link = href ? `https://www.gntp.or.kr${href}` : '#';
         const date = cells[3]?.textContent?.trim() || '';
 
         return { title, link, date, site: 'GNTP' };
       }).filter(Boolean);
     });
 
-    const recentAnnouncements = announcements.filter(item => isRecentDate(item.date, targetDates));
-    results.push(...recentAnnouncements);
-    console.log(`GNTP: Found ${recentAnnouncements.length} recent announcements.`);
+    const recentAnnouncements = announcementsOnPage.filter(item => 
+      isRecentDate(item.date, targetDates)
+    );
+    
+    allAnnouncements.push(...recentAnnouncements);
+    console.log(`GNTP: Found ${allAnnouncements.length} recent announcements.`);
 
   } catch (error) {
-    console.error('GNTP scraping error:', error);
+    console.error(`GNTP scraping error:`, error);
   } finally {
     await page.close();
   }
   
-  return results;
+  return allAnnouncements;
 }
 
 module.exports = { scrapeGNTP };

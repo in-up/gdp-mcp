@@ -12,6 +12,7 @@ const { scrapeGNCKL } = require('./src/scrapers/gnckl');
 const { scrapeGNCEP } = require('./src/scrapers/gncep');
 const { scrapeRIPC } = require('./src/scrapers/ripc');
 const { scrapeCCEI } = require('./src/scrapers/ccei');
+const { scrapeGnstartup } = require('./src/scrapers/gnstartup');
 
 
 function deduplicateResults(results) {
@@ -112,6 +113,7 @@ async function main() {
     { name: 'KStartup', fn: scrapeKStartup },
     { name: 'RIPC', fn: scrapeRIPC },
     { name: 'CCEI', fn: scrapeCCEI },
+    { name: 'GNStartup', fn: scrapeGnstartup },
   ];
 
   const scraperStatuses = {};

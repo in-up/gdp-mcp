@@ -1,6 +1,6 @@
 {
   "header": {
-    "lastUpdated": "2025-09-11T09:33:09.066Z",
+    "lastUpdated": "2025-09-12T06:04:28.698Z",
     "scraperStatuses": {
       "Bizinfo": "success",
       "GNTP": "success",
@@ -8,10 +8,17 @@
       "GNCEP": "success",
       "KStartup": "success",
       "RIPC": "success",
-      "CCEI": "success"
+      "CCEI": "success",
+      "GNStartup": "success"
     }
   },
   "announcements": [
+    {
+      "title": "[한국지식재산보호원] 2025년 영업비밀·기술보호 컨설팅 4차 모집 통합공고",
+      "link": "https://pms.ripc.org/pms/biz/applicant/board/viewBoardDetail.do?boardSeq=13706",
+      "date": "2025-09-12",
+      "site": "RIPC"
+    },
     {
       "title": "[강원] 삼척시 2025년 청년 스타트업 창업 지원사업 참여자 모집 공고 (2025-09-08 ~ 2025-09-19)",
       "link": "https://www.bizinfo.go.krview.do?pblancId=PBLN_000000000114769",
@@ -632,6 +639,186 @@
       "link": "https://pms.ripc.org/pms/biz/applicant/board/viewBoardDetail.do?boardSeq=13684",
       "date": "2025-09-10",
       "site": "RIPC"
+    },
+    {
+      "title": "2025 하반기 여성창업 무료 교육 \"네온 & 페이퍼 플라워\" 창업강좌",
+      "link": "https://www.gnstartup.kr/business/8339db24-725a-45bc-baf9-d778adc7b0d8/9934/detail",
+      "date": "2025-09-09",
+      "site": "GNStartup"
+    },
+    {
+      "title": "2025년 마산자유무역지역 역량강화 기업지원사업 지원기업 3차 모집 공고",
+      "link": "https://www.gntp.or.kr/biz/applyInfo/3524",
+      "date": "2025-09-06",
+      "site": "GNStartup"
+    },
+    {
+      "title": "『2025 글로벌 수소전시회 참가 및 해외진출 기업 지원사업』 전시회 참가기업 모집공고",
+      "link": "https://www.gntp.or.kr/biz/applyInfo/3527",
+      "date": "2025-09-06",
+      "site": "GNStartup"
+    },
+    {
+      "title": "2025년 경남 반도체 거버넌스 구축사업 신규 과제(반도체, 센서) 발굴 연구회 모집",
+      "link": "https://www.gntp.or.kr/biz/applyInfo/3526",
+      "date": "2025-09-06",
+      "site": "GNStartup"
+    },
+    {
+      "title": "2025년 신산업 연계 청년일자리 창출사업 참여기업 3차 모집 공고",
+      "link": "https://www.cwip.or.kr/application/application_view.php?ab_id=252",
+      "date": "2025-09-06",
+      "site": "GNStartup"
+    },
+    {
+      "title": "2025년 현장실습 지원사업 표준현장실습 학기제(2학기) 참여기업 모집 공고",
+      "link": "https://www.gntp.or.kr/biz/applyInfo/3528",
+      "date": "2025-09-06",
+      "site": "GNStartup"
+    },
+    {
+      "title": "[수시모집]2025년 경남 디지털 혁신브릿지 디지털 기업 입주 공간(공유오피스) 지원사업 공고",
+      "link": "https://www.gntp.or.kr/biz/applyInfo/3525",
+      "date": "2025-09-06",
+      "site": "GNStartup"
+    },
+    {
+      "title": "[재공고]2025년 경남「유니(UNI)-콘(CORN) 창업 공유대학」 대학연합 아이디어 발굴 경진대회 위탁용역 입찰 재공고 (협상에 의한 계약) ~ 9.12.(금), 17:00까지",
+      "link": "https://www.gnstartup.kr/business/8339db24-725a-45bc-baf9-d778adc7b0d8/9739/detail",
+      "date": "2025-09-05",
+      "site": "GNStartup"
+    },
+    {
+      "title": "2025년 9차 진주지식산업센터 입주기업 모집 공고",
+      "link": "https://www.gnstartup.kr/business/8339db24-725a-45bc-baf9-d778adc7b0d8/9738/detail",
+      "date": "2025-09-05",
+      "site": "GNStartup"
+    },
+    {
+      "title": "글로벌 스타트업 페스티벌 명칭 및 슬로건 아이디어 공모전 참가자 모집 공고",
+      "link": "https://www.gnstartup.kr/business/8339db24-725a-45bc-baf9-d778adc7b0d8/9736/detail",
+      "date": "2025-08-29",
+      "site": "GNStartup"
+    },
+    {
+      "title": "2025년 경남 글로벌 혁신특구 차세대 첨단위성 기업육성 지원사업(신산업 책임보험 지원)",
+      "link": "https://www.gntp.or.kr/biz/applyInfo/3513",
+      "date": "2025-08-14",
+      "site": "GNStartup"
+    },
+    {
+      "title": "경남 수산부산물 재활용 규제자유특구 기업지원사업 지원기업 모집 공고",
+      "link": "https://www.gntp.or.kr/biz/applyInfo/3493",
+      "date": "2025-08-14",
+      "site": "GNStartup"
+    },
+    {
+      "title": "「2025년 외국인 기술창업지원 프로그램」 참여자 모집",
+      "link": "https://www.gnstartup.kr/business/8339db24-725a-45bc-baf9-d778adc7b0d8/9661/detail",
+      "date": "2025-08-13",
+      "site": "GNStartup"
+    },
+    {
+      "title": "2025년 경남메타버스지원센터 전시회 참가 지원 기업 추가 모집공고",
+      "link": "https://www.gntp.or.kr/biz/applyInfo/3478",
+      "date": "2025-07-24",
+      "site": "GNStartup"
+    },
+    {
+      "title": "기술·경영 애로해결을 위한 Quick Solution Program 신청기업 모집",
+      "link": "https://www.gntp.or.kr/biz/applyInfo/3474",
+      "date": "2025-07-24",
+      "site": "GNStartup"
+    },
+    {
+      "title": "「2025년 경남진주강소특구 이노테크 발굴 및 창업지원사업」 예비·초기창업자 모집 공고 (상시)",
+      "link": "https://innopolisjinju.com/program/show/107",
+      "date": "2025-07-24",
+      "site": "GNStartup"
+    },
+    {
+      "title": "경남 수산부산물 재활용 규제자유특구 책임보험 지원기업 모집 공고",
+      "link": "https://www.gntp.or.kr/biz/applyInfo/3451",
+      "date": "2025-07-06",
+      "site": "GNStartup"
+    },
+    {
+      "title": "2025년 청소년 기업가정신 확산 참여학교 모집 공고",
+      "link": "https://www.gnstartup.kr/business/8339db24-725a-45bc-baf9-d778adc7b0d8/8310/detail",
+      "date": "2025-03-05",
+      "site": "GNStartup"
+    },
+    {
+      "title": "[수시모집]2025년 경남 디지털 혁신브릿지 디지털 기업 입주 공간(일반오피스) 지원사업 공고",
+      "link": "https://www.gntp.or.kr/biz/applyInfo/3325",
+      "date": "2025-02-13",
+      "site": "GNStartup"
+    },
+    {
+      "title": "[수시모집]2025년 경남 디지털 혁신브릿지 디지털 기업 입주 공간(공유오피스) 지원사업 공고",
+      "link": "https://www.gntp.or.kr/biz/applyInfo/3324",
+      "date": "2025-02-13",
+      "site": "GNStartup"
+    },
+    {
+      "title": "2020 경남콘텐츠코리아랩 상상무한대 아이디어 공모전 추가 모집",
+      "link": "https://www.gnckl.or.kr/bbs/board.php?bo_table=business_list&wr_id=10",
+      "date": "2023-10-19",
+      "site": "GNStartup"
+    },
+    {
+      "title": "2020 경남콘텐츠코리아랩 참가자 모집공고",
+      "link": "https://www.gnckl.or.kr/bbs/board.php?bo_table=business_list&wr_id=14",
+      "date": "2023-10-19",
+      "site": "GNStartup"
+    },
+    {
+      "title": "[경남콘텐츠코리아랩] 2020 경남콘텐츠코리아랩 창작 모임 지원사업 「창작본능」 참가자 모집",
+      "link": "https://www.gnckl.or.kr/bbs/board.php?bo_table=business_list&wr_id=15",
+      "date": "2023-10-19",
+      "site": "GNStartup"
+    },
+    {
+      "title": "[경남서부지식재산센터] IP(지식재산)나래 프로그램 지원사업",
+      "link": "https://www.gnstartup.kr/business/8339db24-725a-45bc-baf9-d778adc7b0d8/64/detail",
+      "date": "2020-11-20",
+      "site": "GNStartup"
+    },
+    {
+      "title": "[한국임업진흥원] 2020년 예비창업패키지 비대면분야 예비창업자 모집 안내",
+      "link": "https://www.gnstartup.kr/business/8339db24-725a-45bc-baf9-d778adc7b0d8/66/detail",
+      "date": "2020-11-20",
+      "site": "GNStartup"
+    },
+    {
+      "title": "2020년 BI 우수 입주기업 홍보 지원 (크라우드펀딩 연계) 모집 공고",
+      "link": "https://www.gnstartup.kr/business/8339db24-725a-45bc-baf9-d778adc7b0d8/69/detail",
+      "date": "2020-11-20",
+      "site": "GNStartup"
+    },
+    {
+      "title": "창업보육센터 입주업체 모집공고(20.09.11)",
+      "link": "https://www.gnstartup.kr/business/8339db24-725a-45bc-baf9-d778adc7b0d8/67/detail",
+      "date": "2020-11-20",
+      "site": "GNStartup"
+    },
+    {
+      "title": "2020년 초기창업패키지 창업 기업 모집(2차) 홍보",
+      "link": "https://www.gnstartup.kr/business/8339db24-725a-45bc-baf9-d778adc7b0d8/68/detail",
+      "date": "2020-11-20",
+      "site": "GNStartup"
+    },
+    {
+      "title": "20년 R&D기획역량강화 교육·코칭 신청 안내",
+      "link": "https://www.gnstartup.kr/business/8339db24-725a-45bc-baf9-d778adc7b0d8/65/detail",
+      "date": "2020-11-20",
+      "site": "GNStartup"
+    },
+    {
+      "title": "「대한민국 4차 산업혁명 페스티벌 2021」 참가 지원 프로그램 안내",
+      "link": "https://www.gnstartup.kr/business/8339db24-725a-45bc-baf9-d778adc7b0d8/27/detail",
+      "date": "2020-11-11",
+      "site": "GNStartup"
     }
   ]
 }

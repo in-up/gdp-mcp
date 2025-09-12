@@ -2,7 +2,7 @@ name: Daily Government Announcements Scraper
 
 on:
   schedule:
-    - cron: '0 23 * * *'
+    - cron: '0 16 * * *'
   
   # 수동 실행 가능
   workflow_dispatch:
@@ -38,7 +38,7 @@ jobs:
       run: |
         git config --local user.email "action@github.com"
         git config --local user.name "GitHub Action"
-        git add announcements.json README.md
+        git add announcements.json README.md output
         if ! git diff --staged --quiet; then
           git commit -m "Update announcements - $(date '+%Y-%m-%d %H:%M:%S')"
           git push
