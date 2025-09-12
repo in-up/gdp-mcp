@@ -22,7 +22,15 @@ async function scrapeBizinfo(browser, isRecentDate, targetDates) {
           const titleElement = cells[2]?.querySelector('a');
           const title = titleElement?.textContent?.trim() || '';
           const href = titleElement?.getAttribute('href') || '';
-          const link = href ? `https://www.bizinfo.go.kr${href}` : '#';
+          let link = href;
+          if (href && !href.startsWith('http')) {
+            try {
+                const baseUrl = 'https://www.bizinfo.go.kr/web/lay1/bbs/S1T122C128/AS/74/'; // Base path for relative URLs
+                link = new URL(href, baseUrl).href;
+            } catch (e) {
+                link = '#';
+            }
+          }
           
           const applicationPeriod = cells[3]?.textContent?.trim() || '';
           const postedDate = cells[6]?.textContent?.trim() || '';

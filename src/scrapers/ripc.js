@@ -55,7 +55,7 @@ async function scrapeRIPC(browser, isRecentDate, targetDates) {
         const date = item.writeTimeStr?.trim() || '';
         const boardSeq = item.boardSeq;
 
-        const link = `https://pms.ripc.org/pms/biz/applicant/board/viewBoardDetail.do?boardSeq=${boardSeq}`;
+        const link = 'https://pms.ripc.org/pms/biz/applicant/board/viewBoardList.do?boardCategoryCode=BD40000';
 
         return { title, link, date, site: 'RIPC' };
       }).filter(Boolean);
