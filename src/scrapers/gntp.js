@@ -8,7 +8,7 @@ async function scrapeGNTP(browser, isRecentDate, targetDates) {
 
   try {
     const initialUrl = 'https://www.gntp.or.kr/board/list/new';
-    await page.goto(initialUrl, { waitUntil: 'networkidle', timeout: 30000 });
+    await page.goto(initialUrl, { waitUntil: 'domcontentloaded', timeout: 60000 });
 
     const announcementsOnPage = await page.$$eval('#board-list-table tbody tr', (rows) => {
       return rows.map(row => {

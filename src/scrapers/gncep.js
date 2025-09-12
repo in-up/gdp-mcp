@@ -12,8 +12,9 @@ async function scrapeGNCEP(browser, isRecentDate, targetDates) {
     try {
       await page.goto(site.url, { waitUntil: 'networkidle', timeout: 30000 });
 
-      const announcements = await page.$$eval('#bo_list .tbl_head01 tbody tr', (rows, { siteName, siteUrl }) => {
-        return rows.map(row => {
+            const announcements = await page.$eval('#bo_list .tbl_head01 tbody tr', (rows, args) => {
+        const { siteName, siteUrl } = args;
+        return Array.from(rows).map(row => {
           const cells = row.querySelectorAll('td');
           if (cells.length < 3) return null;
 
@@ -36,7 +37,7 @@ async function scrapeGNCEP(browser, isRecentDate, targetDates) {
 
           return { title, link, date, site: siteName };
         }).filter(item => item && item.title && item.title.length > 0);
-      });
+      }, { siteName: site.name, siteUrl: site.url });
       
 
       const recentAnnouncements = announcements.filter(item => isRecentDate(item.date, targetDates));
