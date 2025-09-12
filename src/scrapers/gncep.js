@@ -1,6 +1,6 @@
 const sites = [
     { name: 'GNCEP_Notice', url: 'https://www.gncep.or.kr/bbs/board.php?bo_table=sub4_notice' },
-    { name: 'GNCEP_Business', url: 'https://www.gncep.or.kr/bbs/board.php?bo_table=sub4_business' },
+    { name: 'gncep_business', url: 'https://www.gncep.or.kr/bbs/board.php?bo_table=sub4_business' },
 ];
 
 async function scrapeGNCEP(browser, isRecentDate, targetDates) {

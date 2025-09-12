@@ -25,7 +25,7 @@ async function scrapeKStartup(browser, isRecentDate, targetDates) {
             const link = `https://www.k-startup.go.kr/web/contents/bizpbanc-ongoing.do?pbancClssCd=PBC010&schM=view&pbancSn=${pbancSn}`;
             results.push({
               title,
-              site: 'K-Startup',
+              site: 'k-startup',
               date,
               link
             });

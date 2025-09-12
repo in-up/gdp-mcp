@@ -21,7 +21,7 @@ async function scrapeGNTP(browser, isRecentDate, targetDates) {
         const link = href ? `https://www.gntp.or.kr${href}` : '#';
         const date = cells[3]?.textContent?.trim() || '';
 
-        return { title, link, date, site: 'GNTP' };
+        return { title, link, date, site: 'gntp' };
       }).filter(Boolean);
     });
 

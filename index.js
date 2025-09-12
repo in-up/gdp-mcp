@@ -44,20 +44,30 @@ function deduplicateResults(results) {
   });
 }
 
-function writeFiles(finalResults, yesterdayAnnouncements, scraperStatuses) {
+function calculateDateSpecificScraperStatuses(announcements, scrapers) {
+  const dateSpecificScraperStatuses = {};
+  scrapers.forEach(scraper => {
+    const count = announcements.filter(item => item.site === scraper.name).length;
+    dateSpecificScraperStatuses[scraper.name] = count;
+  });
+  return dateSpecificScraperStatuses;
+}
+
+function writeFiles(finalResults, yesterdayAnnouncements, allScraperStatuses, scrapers) {
   const outputDir = 'output';
   if (!fs.existsSync(outputDir)) {
     fs.mkdirSync(outputDir);
   }
 
-  const header = {
-    lastUpdated: new Date().toISOString(),
-    scraperStatuses,
-  };
+  // Calculate scraperStatuses for yesterday's announcements
+  const yesterdayScraperStatuses = calculateDateSpecificScraperStatuses(yesterdayAnnouncements, scrapers);
 
   // Write latest.json
   const latestOutput = {
-    header,
+    header: {
+      lastUpdated: new Date().toISOString(),
+      scraperStatuses: yesterdayScraperStatuses,
+    },
     announcements: yesterdayAnnouncements,
   };
   fs.writeFileSync(path.join(outputDir, 'latest.json'), JSON.stringify(latestOutput, null, 2));
@@ -77,7 +87,10 @@ function writeFiles(finalResults, yesterdayAnnouncements, scraperStatuses) {
   }
   const mergedAnnouncements = deduplicateResults([...allAnnouncements, ...finalResults]);
   const allOutput = {
-    header,
+    header: {
+      lastUpdated: new Date().toISOString(),
+      scraperStatuses: allScraperStatuses,
+    },
     announcements: mergedAnnouncements,
   };
   fs.writeFileSync(allJsonPath, JSON.stringify(allOutput, null, 2));
@@ -120,8 +133,8 @@ async function main() {
     { name: 'Bizinfo', fn: scrapeBizinfo },
     { name: 'GNTP', fn: scrapeGNTP },
     { name: 'GNCKL', fn: scrapeGNCKL },
-    { name: 'GNCEP', fn: scrapeGNCEP },
-    { name: 'KStartup', fn: scrapeKStartup },
+    { name: 'gncep', fn: scrapeGNCEP },
+    { name: 'k-startup', fn: scrapeKStartup },
     { name: 'RIPC', fn: scrapeRIPC },
     { name: 'CCEI', fn: scrapeCCEI },
     { name: 'GNStartup', fn: scrapeGnstartup },
@@ -156,7 +169,7 @@ async function main() {
 
     console.log(`Total unique announcements found: ${finalResults.length}`);
     
-    writeFiles(finalResults, yesterdayAnnouncements, scraperStatuses);
+    writeFiles(finalResults, yesterdayAnnouncements, scraperStatuses, scrapers);
     
     console.log('Scraping completed successfully!');
 

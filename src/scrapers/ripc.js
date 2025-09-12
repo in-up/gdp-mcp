@@ -57,7 +57,7 @@ async function scrapeRIPC(browser, isRecentDate, targetDates) {
 
         const link = 'https://pms.ripc.org/pms/biz/applicant/board/viewBoardList.do?boardCategoryCode=BD40000';
 
-        return { title, link, date, site: 'RIPC' };
+        return { title, link, date, site: 'ripc' };
       }).filter(Boolean);
 
       const currentRecentAnnouncements = announcementsOnPage.filter(item => 

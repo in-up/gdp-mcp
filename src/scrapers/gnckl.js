@@ -1,5 +1,5 @@
 const sites = [
-    { name: 'GNCKL_Notice', url: 'https://www.gnckl.or.kr/bbs/board.php?bo_table=notice' },
+    { name: 'gnckl_notice', url: 'https://www.gnckl.or.kr/bbs/board.php?bo_table=notice' },
     { name: 'GNCKL_Notice2', url: 'https://www.gnckl.or.kr/bbs/board.php?bo_table=notice2' },
     { name: 'GNCKL_Notice3', url: 'https://www.gnckl.or.kr/bbs/board.php?bo_table=notice3' },
 ];

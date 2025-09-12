@@ -42,7 +42,7 @@ async function scrapeBizinfo(browser, isRecentDate, targetDates) {
             link, 
             remarks: applicationPeriod, // Changed from applicationPeriod to remarks
             date: postedDate, 
-            site: 'Bizinfo' 
+            site: 'bizinfo' 
           };
         }).filter(Boolean);
       });

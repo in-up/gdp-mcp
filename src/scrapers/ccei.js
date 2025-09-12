@@ -35,7 +35,7 @@ async function scrapeCCEI(browser, isRecentDate, targetDates) {
 
         const link = `https://ccei.creativekorea.or.kr/gyeongnam/allim/allim_view.do?no=${seq}&div_code=${divCode}`;
 
-        return { title, link, date, site: 'CCEI' };
+        return { title, link, date, site: 'ccei' };
       }).filter(Boolean);
 
       const currentRecentAnnouncements = announcementsOnPage.filter(item => 

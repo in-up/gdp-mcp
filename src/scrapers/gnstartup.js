@@ -2,7 +2,7 @@ const axios = require('axios');
 
 const scrapeGnstartup = async (browser, isRecentDate, targetDates) => {
     const announcements = [];
-    const siteName = 'GNStartup';
+    const siteName = 'gnstartup';
     const baseUrl = 'https://www.gnstartup.kr/api/client/business';
 
     try {
