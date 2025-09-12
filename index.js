@@ -53,7 +53,8 @@ function calculateDateSpecificScraperStatuses(announcements, scrapers) {
   return dateSpecificScraperStatuses;
 }
 
-function writeFiles(finalResults, yesterdayAnnouncements, allScraperStatuses, scrapers) {
+
+  function writeFiles(finalResults, yesterdayAnnouncements, allScraperStatuses, scrapers) {
   const outputDir = 'output';
   if (!fs.existsSync(outputDir)) {
     fs.mkdirSync(outputDir);
@@ -89,7 +90,7 @@ function writeFiles(finalResults, yesterdayAnnouncements, allScraperStatuses, sc
   const allOutput = {
     header: {
       lastUpdated: new Date().toISOString(),
-      scraperStatuses: allScraperStatuses,
+      scraperStatuses: calculateDateSpecificScraperStatuses(mergedAnnouncements, scrapers),
     },
     announcements: mergedAnnouncements,
   };
@@ -130,14 +131,14 @@ async function main() {
   });
 
   const scrapers = [
-    { name: 'Bizinfo', fn: scrapeBizinfo },
-    { name: 'GNTP', fn: scrapeGNTP },
-    { name: 'GNCKL', fn: scrapeGNCKL },
+    { name: 'bizinfo', fn: scrapeBizinfo },
+    { name: 'gntp', fn: scrapeGNTP },
+    { name: 'gnckl', fn: scrapeGNCKL },
     { name: 'gncep', fn: scrapeGNCEP },
     { name: 'k-startup', fn: scrapeKStartup },
-    { name: 'RIPC', fn: scrapeRIPC },
-    { name: 'CCEI', fn: scrapeCCEI },
-    { name: 'GNStartup', fn: scrapeGnstartup },
+    { name: 'ripc', fn: scrapeRIPC },
+    { name: 'ccei', fn: scrapeCCEI },
+    { name: 'gnstartup', fn: scrapeGnstartup },
   ];
 
   const scraperStatuses = {};
