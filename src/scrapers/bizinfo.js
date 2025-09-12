@@ -32,7 +32,7 @@ async function scrapeBizinfo(browser, isRecentDate, targetDates) {
           return { 
             title: combinedTitle, 
             link, 
-            applicationPeriod, 
+            remarks: applicationPeriod, // Changed from applicationPeriod to remarks
             date: postedDate, 
             site: 'Bizinfo' 
           };

@@ -16,7 +16,7 @@ const path = require('path');
 const { formatDate, isRecentDate } = require('./src/scrapers/utils');
 
 // Import individual scrapers
-const { scrapeKStartup } = require('./src/scrapers/k-startup');
+const { scrapeKStartup } = require('./src/scrapers/kstartup');
 const { scrapeBizinfo } = require('./src/scrapers/bizinfo');
 const { scrapeGNTP } = require('./src/scrapers/gntp');
 const { scrapeGNCKL } = require('./src/scrapers/gnckl');
@@ -138,11 +138,12 @@ async function main() {
       .map((result, index) => {
         const scraperName = scrapers[index].name;
         if (result.status === 'fulfilled') {
-          scraperStatuses[scraperName] = 'success';
+          const announcementsCount = result.value ? result.value.length : 0;
+          scraperStatuses[scraperName] = announcementsCount; // Store count
           return result.value;
         }
         else {
-          scraperStatuses[scraperName] = 'failed';
+          scraperStatuses[scraperName] = -1; // Store -1 for failure
           console.error(`${scraperName} scraper failed:`, result.reason);
           return [];
         }

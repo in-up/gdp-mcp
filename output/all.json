@@ -1,15 +1,15 @@
 {
   "header": {
-    "lastUpdated": "2025-09-12T06:15:00.250Z",
+    "lastUpdated": "2025-09-12T06:25:36.972Z",
     "scraperStatuses": {
-      "Bizinfo": "success",
-      "GNTP": "success",
-      "GNCKL": "success",
-      "GNCEP": "success",
-      "KStartup": "success",
-      "RIPC": "success",
-      "CCEI": "success",
-      "GNStartup": "success"
+      "Bizinfo": 56,
+      "GNTP": 0,
+      "GNCKL": 0,
+      "GNCEP": 0,
+      "KStartup": 1,
+      "RIPC": 1,
+      "CCEI": 0,
+      "GNStartup": 0
     }
   },
   "announcements": [
