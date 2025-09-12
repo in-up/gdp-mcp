@@ -53,5 +53,7 @@ jobs:
       with:
         name: announcements-${{ github.run_number }}
         path: |
-          announcements.json
+          output/latest.json
+          output/all.json
+          output/*.json
           README.md
