@@ -1,6 +1,6 @@
 # 정부 지원사업 최근 공고
 
-**업데이트:** 2025. 9. 12. 오후 4:13:49
+**업데이트:** 2025. 9. 13. 오후 4:13:26
 
 | 제목 | 사이트 | 날짜 | 링크 |
 |------|--------|------|------|
@@ -58,32 +58,4 @@
 | 2025 안양·의왕·수원 1인창조 및 중장년센터 사업 설명회 및  실전창업교육 | k-startup | 2025-09-12 | [링크](https://www.k-startup.go.kr/web/contents/bizpbanc-ongoing.do?pbancClssCd=PBC010&schM=view&pbancSn=174922) |
 | 2025 대한민국 관광기념품 박람회 참가기업 모집 (~9.17 14:00) | k-startup | 2025-09-12 | [링크](https://www.k-startup.go.kr/web/contents/bizpbanc-ongoing.do?pbancClssCd=PBC010&schM=view&pbancSn=174900) |
 | [한국지식재산보호원] 2025년 영업비밀·기술보호 컨설팅 4차 모집 통합공고 | ripc | 2025-09-12 | [링크](https://pms.ripc.org/pms/biz/applicant/board/viewBoardList.do?boardCategoryCode=BD40000) |
-| [강원] 삼척시 2025년 청년 스타트업 창업 지원사업 참여자 모집 공고 (2025-09-... | bizinfo | 2025-09-11 | [링크](https://www.bizinfo.go.kr/web/lay1/bbs/S1T122C128/AS/74/view.do?pblancId=PBLN_000000000114769) |
-| [강원] 삼척시 2025년 하반기 영농부산물 안전처리 지원사업 신청 공고 (2025-09-... | bizinfo | 2025-09-11 | [링크](https://www.bizinfo.go.kr/web/lay1/bbs/S1T122C128/AS/74/view.do?pblancId=PBLN_000000000114783) |
-| [충북] 단양군 2025년 중소기업 육성자금 지원계획 공고 (예산 소진시까지) | bizinfo | 2025-09-11 | [링크](https://www.bizinfo.go.kr/web/lay1/bbs/S1T122C128/AS/74/view.do?pblancId=PBLN_000000000114768) |
-| [강원] 삼척시 2025년 (예비)사회적기업 일자리창출 지원사업 참여기업 모집 공고 (20... | bizinfo | 2025-09-11 | [링크](https://www.bizinfo.go.kr/web/lay1/bbs/S1T122C128/AS/74/view.do?pblancId=PBLN_000000000114767) |
-| [부산] 2025년 인도네시아 산업기계 전시회 부산관 참가 지원 공고(글로벌 수출 스타기업... | bizinfo | 2025-09-11 | [링크](https://www.bizinfo.go.kr/web/lay1/bbs/S1T122C128/AS/74/view.do?pblancId=PBLN_000000000114766) |
-| 2025년 사업재편 지원사업 기업 모집 연장 공고 (2025-09-11 ~ 2025-09-... | bizinfo | 2025-09-11 | [링크](https://www.bizinfo.go.kr/web/lay1/bbs/S1T122C128/AS/74/view.do?pblancId=PBLN_000000000114782) |
-| [충북] 진천군 2025년 2차 소규모 사업장 방지시설(IoT) 설치 지원사업 수정 공고 ... | bizinfo | 2025-09-11 | [링크](https://www.bizinfo.go.kr/web/lay1/bbs/S1T122C128/AS/74/view.do?pblancId=PBLN_000000000114781) |
-| [강원] 동해시 2025년 유망 중소기업 선정 계획 공고 (2025-09-01 ~ 2025... | bizinfo | 2025-09-11 | [링크](https://www.bizinfo.go.kr/web/lay1/bbs/S1T122C128/AS/74/view.do?pblancId=PBLN_000000000114760) |
-| [충북] 진천군 2026년 농촌융복합산업 자금(융자) 지원사업 신청 공고 (2025-09-... | bizinfo | 2025-09-11 | [링크](https://www.bizinfo.go.kr/web/lay1/bbs/S1T122C128/AS/74/view.do?pblancId=PBLN_000000000114759) |
-| [강원] 원주시 2025년 하반기 중소기업 신용보증수수료 지원사업 공고 (예산 소진시까지)... | bizinfo | 2025-09-11 | [링크](https://www.bizinfo.go.kr/web/lay1/bbs/S1T122C128/AS/74/view.do?pblancId=PBLN_000000000114765) |
-| [충북] 영동군 2025년 중소기업(제조업체) 이차보전금 지원사업 공고 (2025-08-2... | bizinfo | 2025-09-11 | [링크](https://www.bizinfo.go.kr/web/lay1/bbs/S1T122C128/AS/74/view.do?pblancId=PBLN_000000000114758) |
-| [충북] 영동군 2025년 5차 관광객 유치 인센티브 지원계획 변경 공고 (예산 소진시까지... | bizinfo | 2025-09-11 | [링크](https://www.bizinfo.go.kr/web/lay1/bbs/S1T122C128/AS/74/view.do?pblancId=PBLN_000000000114764) |
-| [충북] 옥천군 2025년 하반기(잔여분) 중소기업육성자금 이차보전 추가 모집 재공고 (2... | bizinfo | 2025-09-11 | [링크](https://www.bizinfo.go.kr/web/lay1/bbs/S1T122C128/AS/74/view.do?pblancId=PBLN_000000000114757) |
-| [충북] 2025년 3차 동반성장 상생협력 지원사업 시행계획 공고 (2025-09-08 ~... | bizinfo | 2025-09-11 | [링크](https://www.bizinfo.go.kr/web/lay1/bbs/S1T122C128/AS/74/view.do?pblancId=PBLN_000000000114756) |
-| [충북] 청주시 2025년 제3회 유망청년기업 선정계획 공고 (2025-09-10 ~ 20... | bizinfo | 2025-09-11 | [링크](https://www.bizinfo.go.kr/web/lay1/bbs/S1T122C128/AS/74/view.do?pblancId=PBLN_000000000114762) |
-| [충북] 청주시 2025년 제19회 유망중소기업 및 우수기업인 선정계획 공고 (2025-0... | bizinfo | 2025-09-11 | [링크](https://www.bizinfo.go.kr/web/lay1/bbs/S1T122C128/AS/74/view.do?pblancId=PBLN_000000000114755) |
-| [강원] 춘천시 2025년 여성농업인 지원사업 공고 (2025-09-10 ~ 2025-09... | bizinfo | 2025-09-11 | [링크](https://www.bizinfo.go.kr/web/lay1/bbs/S1T122C128/AS/74/view.do?pblancId=PBLN_000000000114754) |
-| [충북] 보은군 2025년 3분기 청년 소상공인 점포 임차료 지원사업 참여자 모집 공고 (... | bizinfo | 2025-09-11 | [링크](https://www.bizinfo.go.kr/web/lay1/bbs/S1T122C128/AS/74/view.do?pblancId=PBLN_000000000114753) |
-| 2025년 하반기 우수발명품 우선구매 추천사업 기간연장 공고 (2025-09-18 ~ 20... | bizinfo | 2025-09-11 | [링크](https://www.bizinfo.go.kr/web/lay1/bbs/S1T122C128/AS/74/view.do?pblancId=PBLN_000000000114752) |
-| [충북] 청주시 중소기업 맞춤형 판로개척 지원사업 공고 (2025-09-01 ~ 2025-... | bizinfo | 2025-09-11 | [링크](https://www.bizinfo.go.kr/web/lay1/bbs/S1T122C128/AS/74/view.do?pblancId=PBLN_000000000114751) |
-| 2025년 하반기 우수발명품 우선구매 추천사업 규격추가 공고 (2025-09-25 ~ 20... | bizinfo | 2025-09-11 | [링크](https://www.bizinfo.go.kr/web/lay1/bbs/S1T122C128/AS/74/view.do?pblancId=PBLN_000000000114750) |
-| [충북] 청주시 2025년 소상공인 육성자금 추가지원 공고 (예산 소진시까지) | bizinfo | 2025-09-11 | [링크](https://www.bizinfo.go.kr/web/lay1/bbs/S1T122C128/AS/74/view.do?pblancId=PBLN_000000000114749) |
-| [경북] 경주시 2025년 강소기업 육성 기반구축 사업 참여기업 추가모집 공고 (2025-... | bizinfo | 2025-09-11 | [링크](https://www.bizinfo.go.kr/web/lay1/bbs/S1T122C128/AS/74/view.do?pblancId=PBLN_000000000114761) |
-| [부산] 사상구 2025년 하반기 착한가격업소 지정 신청 공고 (2025-09-09 ~ 2... | bizinfo | 2025-09-11 | [링크](https://www.bizinfo.go.kr/web/lay1/bbs/S1T122C128/AS/74/view.do?pblancId=PBLN_000000000114748) |
-| 2025년 하반기 우수발명품 우선구매 추천사업 신규지정 공고 (2025-09-25 ~ 20... | bizinfo | 2025-09-11 | [링크](https://www.bizinfo.go.kr/web/lay1/bbs/S1T122C128/AS/74/view.do?pblancId=PBLN_000000000114740) |
-| 2025년 4차 성능인증(EPC) 신규신청 접수 공고 (2025-09-10 ~ 2025-0... | bizinfo | 2025-09-11 | [링크](https://www.bizinfo.go.kr/web/lay1/bbs/S1T122C128/AS/74/view.do?pblancId=PBLN_000000000114739) |
-| 2025년 글로벌 오션 디스커버리 사업(한ㆍ중 조선 공급망 협력 포럼 및 수출상담회) 참여... | bizinfo | 2025-09-11 | [링크](https://www.bizinfo.go.kr/web/lay1/bbs/S1T122C128/AS/74/view.do?pblancId=PBLN_000000000114747) |
-| 2025년 프리팁스(Pre-TIPS) 3차 창업기업 모집공고 | k-startup | 2025-09-11 | [링크](https://www.k-startup.go.kr/web/contents/bizpbanc-ongoing.do?pbancClssCd=PBC010&schM=view&pbancSn=174940) |
 | 2025 외국인 기술창업지원 프로그램 신청자 모집 | ccei | 2025.09.12 | [링크](https://ccei.creativekorea.or.kr/gyeongnam/allim/allim_view.do?no=15255&div_code=1) |
