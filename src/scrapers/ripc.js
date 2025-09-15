@@ -55,9 +55,14 @@ async function scrapeRIPC(browser, isRecentDate, targetDates) {
         const date = item.writeTimeStr?.trim() || '';
         const boardSeq = item.boardSeq;
 
-        const link = 'https://pms.ripc.org/pms/biz/applicant/board/viewBoardList.do?boardCategoryCode=BD40000';
+        const link = `https://pms.ripc.org/pms/biz/applicant/board/viewBoardList.do?boardCategoryCode=BD40000&boardSeq=${boardSeq}`;
 
-        return { title, link, date, site: 'ripc' };
+        const remarks = `| 항목 | 내용 |
+|---|---|
+| **번호** | ${boardSeq} |
+| **등록일** | ${date} |`;
+
+        return { title, link, date, remarks, site: 'ripc' };
       }).filter(Boolean);
 
       const currentRecentAnnouncements = announcementsOnPage.filter(item => 

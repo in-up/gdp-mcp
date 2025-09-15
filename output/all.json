@@ -14,13 +14,6 @@
   },
   "announcements": [
     {
-      "title": "AI인공지능 특강",
-      "link": "https://ccei.creativekorea.or.kr/gyeongnam/allim/allim_view.do?no=15258&div_code=1",
-      "remarks": "| 항목 | 내용 |\n|---|---|\n| **번호** | 15258 |\n| **제목** | AI인공지능 특강 |\n| **담당자** | 김시웅 |\n| **전화번호** | 055-291-9309 |\n| **첨부** |  |\n| **등록일** | 2025.09.14 |\n| **조회수** | 16 |",
-      "date": "2025.09.14",
-      "site": "ccei"
-    },
-    {
       "title": "(재)여성기업종합지원센터 경남센터 입주기업 모집 ",
       "link": "https://www.gnstartup.kr/business/8339db24-725a-45bc-baf9-d778adc7b0d8/9936/detail",
       "remarks": "| 항목 | 내용 |\n|---|---|\n| **번호** | 9936 |\n| **등록일** | 2025-09-15 09:22:58.0 |\n| **분야** | 시설·공간 |\n| **지역** | 경상남도 |\n| **제목** | (재)여성기업종합지원센터 경남센터 입주기업 모집  |\n| **조회수** | 7 |",
@@ -781,12 +774,6 @@
       "link": "https://pms.ripc.org/pms/biz/applicant/board/viewBoardDetail.do?boardSeq=13684",
       "date": "2025-09-10",
       "site": "ripc"
-    },
-    {
-      "title": "2025 외국인 기술창업지원 프로그램 신청자 모집",
-      "link": "https://ccei.creativekorea.or.kr/gyeongnam/allim/allim_view.do?no=15255&div_code=1",
-      "date": "2025.09.12",
-      "site": "ccei"
     }
   ]
 }

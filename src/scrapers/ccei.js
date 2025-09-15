@@ -29,7 +29,7 @@ async function scrapeCCEI(browser, isRecentDate, targetDates) {
 
       const announcementsOnPage = data.result.list.map(item => {
         const title = item.TITLE?.trim() || '';
-        const date = item.REG_DATE?.trim() || '';
+        const date = (item.REG_DATE?.trim() || '').replace(/\./g, '-');
         const seq = item.SEQ;
         const divCode = item.DIV_CODE || '1'; 
 
