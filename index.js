@@ -86,7 +86,7 @@ function calculateDateSpecificScraperStatuses(announcements, scrapers) {
     const existingData = JSON.parse(fs.readFileSync(allJsonPath, 'utf-8'));
     allAnnouncements = existingData.announcements || [];
   }
-  const mergedAnnouncements = deduplicateResults([...allAnnouncements, ...finalResults]);
+  const mergedAnnouncements = deduplicateResults([...finalResults, ...allAnnouncements]);
   const allOutput = {
     header: {
       lastUpdated: new Date().toISOString(),
@@ -97,22 +97,7 @@ function calculateDateSpecificScraperStatuses(announcements, scrapers) {
   fs.writeFileSync(allJsonPath, JSON.stringify(allOutput, null, 2));
 
 
-  // Write Markdown file
-  let markdown = `# 정부 지원사업 최근 공고\n\n`;
-  markdown += `**업데이트:** ${new Date().toLocaleString('ko-KR')}\n\n`;
-  markdown += `| 제목 | 사이트 | 날짜 | 링크 |\n`;
-  markdown += `|------|--------|------|------|\n`;
-
-  if (finalResults.length === 0) {
-    markdown += `| 최근 2일간 새로운 공고가 없습니다 | - | - | - |\n`;
-  } else {
-    finalResults.forEach(item => {
-      const title = item.title.replace(/\|/g, ' ').substring(0, 50);
-      const cleanTitle = title.length > 49 ? title + '...' : title;
-      markdown += `| ${cleanTitle} | ${item.site} | ${item.date} | [링크](${item.link}) |\n`;
-    });
-  }
-  fs.writeFileSync('README.md', markdown);
+  
 }
 
 async function main() {

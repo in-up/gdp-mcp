@@ -1,7 +1,32 @@
-# 정부 지원사업 최근 공고
+# Government Project Announcement Scraper
 
-**업데이트:** 2025. 9. 14. 오후 4:13:21
+This project is a web scraper designed to collect information about government support projects from various websites.
 
-| 제목 | 사이트 | 날짜 | 링크 |
-|------|--------|------|------|
-| AI인공지능 특강 | ccei | 2025.09.14 | [링크](https://ccei.creativekorea.or.kr/gyeongnam/allim/allim_view.do?no=15258&div_code=1) |
+## Overview
+
+The scraper is built with Node.js and Playwright. It scrapes the following websites:
+
+- bizinfo.go.kr
+- k-startup.go.kr
+- and 6 other sites.
+
+The collected data is processed, deduplicated, and saved as JSON files in the `output/` directory.
+
+## How to Run
+
+1.  Install dependencies:
+    ```bash
+    npm install
+    ```
+2.  Run the scraper:
+    ```bash
+    node index.js
+    ```
+
+## Output
+
+The scraper generates the following files in the `output/` directory:
+
+- `latest.json`: Announcements from the last day.
+- `YYYYMMDD.json`: Announcements from the last day, with a date-stamped filename.
+- `all.json`: All announcements collected over time.

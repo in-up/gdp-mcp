@@ -14,12 +14,26 @@ async function scrapeKStartup(browser, isRecentDate, targetDates) {
       const isNotice = $(element).hasClass('notice');
       if (isNotice) {
         const title = $(element).find('.tit').text().trim();
-        const dateSpan = $(element).find('.bottom span:nth-child(3)').text().trim();
-        const date = dateSpan.replace('등록일자', '').trim();
+        const regDateSpan = $(element).find('.bottom span:nth-child(3)').text().trim();
+        const startDateSpan = $(element).find('.bottom span:nth-child(4)').text().trim();
+        const endDateSpan = $(element).find('.bottom span:nth-child(5)').text().trim();
+        const viewsSpan = $(element).find('.bottom span:nth-child(6)').text().trim();
+
+        const date = regDateSpan.replace('등록일자', '').trim();
+        const startDate = startDateSpan.replace('시작일자', '').trim();
+        const endDate = endDateSpan.replace('마감일자', '').trim();
+        const views = viewsSpan.replace('조회', '').trim();
+
+        const remarks = `| 항목 | 내용 |
+|---|---|
+| **등록일자** | ${date} |
+| **시작일자** | ${startDate} |
+| **마감일자** | ${endDate} |
+| **조회** | ${views} |`;
 
         if (isRecentDate(date, targetDates)) {
           const onclickAttr = $(element).find('.middle a').attr('href');
-          const pbancSnMatch = onclickAttr.match(/go_view\((\d+)\)/);
+          const pbancSnMatch = onclickAttr.match(/go_view(\d+)/);
           if (pbancSnMatch) {
             const pbancSn = pbancSnMatch[1];
             const link = `https://www.k-startup.go.kr/web/contents/bizpbanc-ongoing.do?pbancClssCd=PBC010&schM=view&pbancSn=${pbancSn}`;
@@ -27,7 +41,9 @@ async function scrapeKStartup(browser, isRecentDate, targetDates) {
               title,
               site: 'k-startup',
               date,
-              link
+              link,
+              remarks,
+              endDate
             });
           }
         }

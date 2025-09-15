@@ -35,7 +35,22 @@ async function scrapeCCEI(browser, isRecentDate, targetDates) {
 
         const link = `https://ccei.creativekorea.or.kr/gyeongnam/allim/allim_view.do?no=${seq}&div_code=${divCode}`;
 
-        return { title, link, date, site: 'ccei' };
+        const regUsr = item.REG_USR || '';
+        const chargeTel = item.CHARGE_TEL || '';
+        const file = item.FILE || '';
+        const hit = item.HIT || '';
+
+        const remarks = `| 항목 | 내용 |
+|---|---|
+| **번호** | ${seq} |
+| **제목** | ${title} |
+| **담당자** | ${regUsr} |
+| **전화번호** | ${chargeTel} |
+| **첨부** | ${file} |
+| **등록일** | ${date} |
+| **조회수** | ${hit} |`;
+
+        return { title, link, remarks, date, site: 'ccei' };
       }).filter(Boolean);
 
       const currentRecentAnnouncements = announcementsOnPage.filter(item => 

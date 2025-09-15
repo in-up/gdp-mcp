@@ -1,4 +1,3 @@
-
 async function scrapeBizinfo(browser, isRecentDate, targetDates) {
   console.log('Scraping Bizinfo...');
   let allRecentAnnouncements = [];
@@ -19,6 +18,8 @@ async function scrapeBizinfo(browser, isRecentDate, targetDates) {
           const cells = row.querySelectorAll('td');
           if (cells.length < 8) return null;
 
+          const number = cells[0]?.textContent?.trim() || '';
+          const supportField = cells[1]?.textContent?.trim() || '';
           const titleElement = cells[2]?.querySelector('a');
           const title = titleElement?.textContent?.trim() || '';
           const href = titleElement?.getAttribute('href') || '';
@@ -33,15 +34,31 @@ async function scrapeBizinfo(browser, isRecentDate, targetDates) {
           }
           
           const applicationPeriod = cells[3]?.textContent?.trim() || '';
+          const department = cells[4]?.textContent?.trim() || '';
+          const agency = cells[5]?.textContent?.trim() || '';
           const postedDate = cells[6]?.textContent?.trim() || '';
+          const views = cells[7]?.textContent?.trim() || '';
 
-          const combinedTitle = applicationPeriod && !applicationPeriod.includes('세부사업별') ? `${title} (${applicationPeriod})` : title;
+          const remarks = `| 항목 | 내용 |
+|---|---|
+| **번호** | ${number} |
+| **지원분야** | ${supportField} |
+| **지원사업명** | ${title} |
+| **신청기간** | ${applicationPeriod} |
+| **소관부처·지자체** | ${department} |
+| **사업수행기관** | ${agency} |
+| **등록일** | ${postedDate} |
+| **조회수** | ${views} |`;
+
+          const endDateMatch = applicationPeriod.match(/\s*~\s*(\d{4}-\d{2}-\d{2})/);
+          const endDate = endDateMatch ? endDateMatch[1] : null;
 
           return { 
-            title: combinedTitle, 
-            link, 
-            remarks: applicationPeriod, // Changed from applicationPeriod to remarks
+            title: title, 
+            link,
+            remarks: remarks,
             date: postedDate, 
+            endDate: endDate,
             site: 'bizinfo' 
           };
         }).filter(Boolean);
