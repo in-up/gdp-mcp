@@ -1,6 +1,6 @@
 {
   "header": {
-    "lastUpdated": "2025-09-15T06:55:45.943Z",
+    "lastUpdated": "2025-09-15T07:11:15.456Z",
     "scraperStatuses": {
       "bizinfo": 0,
       "gntp": 0,
@@ -8,9 +8,17 @@
       "gncep": 0,
       "k-startup": 0,
       "ripc": 0,
-      "ccei": 0,
+      "ccei": 1,
       "gnstartup": 0
     }
   },
-  "announcements": []
+  "announcements": [
+    {
+      "title": "AI인공지능 특강",
+      "link": "https://ccei.creativekorea.or.kr/gyeongnam/allim/allim_view.do?no=15258&div_code=1",
+      "remarks": "| 항목 | 내용 |\n|---|---|\n| **번호** | 15258 |\n| **제목** | AI인공지능 특강 |\n| **담당자** | 김시웅 |\n| **전화번호** | 055-291-9309 |\n| **첨부** |  |\n| **등록일** | 2025-09-14 |\n| **조회수** | 16 |",
+      "date": "2025-09-14",
+      "site": "ccei"
+    }
+  ]
 }
