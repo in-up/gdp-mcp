@@ -1,6 +1,6 @@
 {
   "header": {
-    "lastUpdated": "2025-09-22T00:45:17.925Z",
+    "lastUpdated": "2025-09-22T06:22:52.935Z",
     "scraperStatuses": {
       "bizinfo": 314,
       "gntp": 1,
@@ -9,10 +9,18 @@
       "k-startup": 6,
       "ripc": 5,
       "ccei": 3,
-      "gnstartup": 3
+      "gnstartup": 4
     }
   },
   "announcements": [
+    {
+      "title": "2025년 창원강소특구 KERI-Memners 모집",
+      "link": "https://www.gnstartup.kr/business/8339db24-725a-45bc-baf9-d778adc7b0d8/9938/detail",
+      "remarks": "| 항목 | 내용 |\n|---|---|\n| **번호** | 9938 |\n| **등록일** | 2025-09-22 11:03:33.0 |\n| **분야** | 기타 |\n| **지역** | 경상남도 |\n| **제목** | 2025년 창원강소특구 KERI-Memners 모집 |\n| **조회수** | 8 |",
+      "date": "2025-09-22",
+      "endDate": "2025-10-24",
+      "site": "gnstartup"
+    },
     {
       "title": "[인천] 2025년 사회적가치지표(SVI)측정지원사업 모의 측정 참여기업 모집 공고",
       "link": "https://www.bizinfo.go.kr/web/lay1/bbs/S1T122C128/AS/74/view.do?pblancId=PBLN_000000000115040",
