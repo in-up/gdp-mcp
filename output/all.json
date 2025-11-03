@@ -1,8 +1,8 @@
 {
   "header": {
-    "lastUpdated": "2025-11-03T00:46:28.628Z",
+    "lastUpdated": "2025-11-03T06:24:14.450Z",
     "scraperStatuses": {
-      "bizinfo": 1227,
+      "bizinfo": 1228,
       "gntp": 1,
       "gnckl": 0,
       "gncep": 0,
@@ -13,6 +13,14 @@
     }
   },
   "announcements": [
+    {
+      "title": "OpenData X AI챌린지 참여기업 모집 수정 공고",
+      "link": "https://www.bizinfo.go.kr/web/lay1/bbs/S1T122C128/AS/74/view.do?pblancId=PBLN_000000000116016",
+      "remarks": "| 항목 | 내용 |\n|---|---|\n| **번호** | 1728 |\n| **지원분야** | 창업 |\n| **지원사업명** | OpenData X AI챌린지 참여기업 모집 수정 공고 |\n| **신청기간** | 2025-11-06 ~ 2025-11-26 |\n| **소관부처·지자체** | 중소벤처기업부 |\n| **사업수행기관** | 창업진흥원 |\n| **등록일** | 2025-11-03 |\n| **조회수** | 167 |",
+      "date": "2025-11-03",
+      "endDate": "2025-11-26",
+      "site": "bizinfo"
+    },
     {
       "title": "제조 DX멘토단 활용지원(2026년 스마트 제조혁신 지원사업 통합 공고)",
       "link": "https://www.bizinfo.go.kr/web/lay1/bbs/S1T122C128/AS/74/view.do?pblancId=PBLN_000000000116008",
